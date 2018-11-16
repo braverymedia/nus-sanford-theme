@@ -1,0 +1,88 @@
+// _mixins.scss
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1190px,
+  xlarge: 1600px
+);
+
+@mixin mq($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// Set aspect ratio for block-level elements
+@mixin aspect( $width: 1, $height: 1, $fit: false ) {
+  position: relative;
+	@if ($fit) {
+		display: flex;
+		> img, > video, > iframe, > object {
+			object-fit: $fit;
+		}
+	}
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+}
+
+@mixin button($color, $background, $border) {
+	color: $color;
+  background-color: $background;
+  border: 0;
+  border-color: $border;
+  display: block;
+  font-family: $font__default-heading-stack;
+  @include medium() {
+    display: inline-block;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: $border;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+}
+
+// Reset style for buttons
+@mixin button-blank() {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  &:hover {
+    background: none;
+  }
+}

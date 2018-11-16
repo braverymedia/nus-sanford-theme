@@ -1,0 +1,44 @@
+{
+  "name": "svg-injector-2",
+  "homepage": "https://github.com/flobacher/SVGInjector2",
+  "authors": [
+    "Iconic <yourfriends@useiconic.com>",
+    "Flo Bacher <flo@digital-fuse.net>"
+  ],
+  "description": "Fast, caching, dynamic inline SVG DOM injection library",
+  "main": "dist/svg-injector.min.js",
+  "moduleType": [
+    "node",
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "SVG",
+    "Scalable Vector Graphics",
+    "injector",
+    "images",
+    "img",
+    "html",
+    "DOM"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests",
+    "examples"
+  ],
+  "version": "2.1.3",
+  "_release": "2.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.3",
+    "commit": "ff79cb5bd11912fa9bfdf8406b8b9bd0b18bcda2"
+  },
+  "_source": "https://github.com/flobacher/SVGInjector2.git",
+  "_target": "^2.1.3",
+  "_originalSource": "svg-injector-2"
+}

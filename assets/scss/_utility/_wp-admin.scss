@@ -1,0 +1,8 @@
+.admin-bar {
+  .menu-toggle, .site-menu-group {
+    margin-top: 46px;
+    @include mq(medium) {
+      margin-top: 0; // change this later
+    }
+  }
+}
