@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1915,7 +1922,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/assets/bower_components/svg-injector-2/svg-injector.js",
 		"oF": 0,
 		"sC": 1,
@@ -1979,6 +1986,28 @@
 		"oAP": "/assets/css/wp-base.css.map",
 		"oF": 0
 		},
+	"/assets/img/android-store_icon.png": {
+		"ft": 32768,
+		"iS": 8605,
+		"oA": 0,
+		"oAP": "/assets/img/android-store_icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/apple-store_icon.png": {
+		"ft": 32768,
+		"iS": 4688,
+		"oA": 0,
+		"oAP": "/assets/img/apple-store_icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/bravery-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1999,15 +2028,215 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/assets/js/customizer-controls.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/customizer-controls.min.js",
+	"/assets/img/sanford-icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/sanford-icons.svg",
 		"oF": 0,
-		"sC": 1,
-		"tS": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/book.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/book.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/diversity.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/diversity.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/email.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/email.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/faq.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/faq.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/hands.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/hands.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/listen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/listen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/love.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/love.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/phone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/play.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/play.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/presentation.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/presentation.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/quote.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/quote.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/research.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/research.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/share.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/share.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/star.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/tools.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/tools.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/trophy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/trophy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/svg-src/youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/svg-src/youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/assets/js/customizer-preview.js": {
 		"ft": 64,
@@ -2021,7 +2250,7 @@
 		},
 	"/assets/js/global.js": {
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/min/global.min.js",
@@ -2049,12 +2278,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/assets/js/min/customize-preview.min.js": {
+	"/assets/js/min/customizer-preview.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/assets/js/min/min/customize-preview.min.min.js",
+		"oAP": "/assets/js/min/min/customizer-preview.min.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -2068,6 +2297,13 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"/assets/js/min/global.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/js/min/global.min.js.map",
+		"oF": 0
 		},
 	"/assets/js/modernizr.min.js": {
 		"ft": 64,
@@ -3129,6 +3365,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/components/_nav-utility.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_nav-utility.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/elements/_buttons.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3617,6 +3866,14 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"/assets/js/global.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "/assets/bower_components/svg-injector-2/svg-injector.js",
+			"position": 0,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 547398698,
