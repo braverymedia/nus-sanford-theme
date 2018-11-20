@@ -48,6 +48,7 @@ if ( ! function_exists( 'nus_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'site-menu' => esc_html__( 'Site Menu', 'nus' ),
+			'ambassador-menu' => esc_html__( 'Ambassador Menu', 'nus' ),
 			'social-links' => esc_html__( 'Social Links Menu', 'nus' ),
 			'footer-menu' => esc_html__( 'Footer Menu', 'nus' )
 		) );

@@ -1,0 +1,48 @@
+.visitor-tools {
+  background: rgba($denim, .9);
+  color: $white;
+  a {
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  h2, li {
+    font-size: ms(-2);
+    font-weight: $weight__book;
+  }
+  li {
+    display: inline;
+  }
+  .contact {
+    display: none;
+    @include mq(medium);
+  }
+  .ambassador-menu {
+    text-align: right;
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      line-height: 0;
+      padding: 0 3px;
+      position: relative;
+      a {
+        display: block;
+        padding: ms(2) ms(-1) ms(2) 0;
+      }
+      &:first-child:after {
+        content: "";
+        width: 1px;
+        height: 33%;
+        background-color: rgba($white, .4);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

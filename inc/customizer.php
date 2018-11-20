@@ -16,8 +16,6 @@ function nus_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	$wp_customize->get_setting( 'nus_email' )->transport 				= 'postMessage';
-	$wp_customize->get_setting( 'nus_phone' )->transport 				= 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
@@ -37,7 +35,7 @@ function nus_customize_register( $wp_customize ) {
 	}
 
 /**
- * Add contact info.
+ * Add contact info section and panel.
  */
 	$wp_customize->add_section( 'nus_customizer_contact' , array(
 	    'title'       => __( 'Contact Info','nus' ),
@@ -70,7 +68,7 @@ function nus_customize_register( $wp_customize ) {
 		'nus_email',
 		array(
 			'default'           => '',
-			'transport'         => 'postMessage'
+			'transport'         => 'postMessage',
 			'sanitize_callback' => 'sanitize_email',
 		)
 	);
@@ -86,6 +84,7 @@ function nus_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->get_setting( 'nus_phone' )->transport 				= 'postMessage';
 }
 add_action( 'customize_register', 'nus_customize_register' );
 
@@ -110,54 +109,7 @@ function nus_customize_partial_blogdescription() {
 /**
  * Bind JS handlers to instantly live-preview changes.
  */
-function nus_customize_preview_js() {
-	wp_enqueue_script( 'nus-customize-preview', get_theme_file_uri( '/assets/js/min/customize-preview.min.js' ), array( 'customize-preview' ), '20181115', true );
+function nus_customizer_preview_js() {
+	wp_enqueue_script( 'nus-customizer-preview', get_theme_file_uri( '/assets/js/customizer-preview.js' ), array( 'customize-preview' ), '20181115', true );
 }
-add_action( 'customize_preview_init', 'nus_customize_preview_js' );
-
-/**
- * Load dynamic logic for the customizer controls area.
- */
-function nus_panels_js() {
-	wp_enqueue_script( 'nus-customize-controls', get_theme_file_uri( '/assets/js/customizer-controls.js' ), array(), '1.0', true );
-}
-add_action( 'customize_controls_enqueue_scripts', 'nus_panels_js' );
-
-/**
- * Sanitize image filter choice.
- *
- * @param string $choice Whether image filter is active.
- *
- * @return string
- */
-function nus_sanitize_color_option( $choice ) {
-	$valid = array(
-		'default',
-		'custom',
-	);
-
-	if ( in_array( $choice, $valid, true ) ) {
-		return $choice;
-	}
-
-	return 'default';
-}
-/**
- * Sanitize image filter choice.
- *
- * @param string $choice Whether image filter is active.
- *
- * @return string
- */
-function nus_sanitize_image_filter( $choice ) {
-	$valid = array(
-		'active',
-		'inactive',
-	);
-
-	if ( in_array( $choice, $valid, true ) ) {
-		return $choice;
-	}
-
-	return 'active';
-}
+add_action( 'customize_preview_init', 'nus_customizer_preview_js' );
