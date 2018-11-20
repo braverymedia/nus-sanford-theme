@@ -1,0 +1,25 @@
+.site-footer {
+  background-color: $ship-gray;
+  color: $white;
+  padding: 20px 25px 35px;
+  a {
+    color: $white;
+    text-decoration: none;
+    letter-spacing: -0.017rem;
+    display: block;
+  }
+  .footer-menus {
+    ul {
+      margin: 0 0 35px 0;
+      padding: 0;
+      list-style: none;
+      &.social-links-menu li {
+        display: inline-block;
+      }
+    }
+  }
+  .site-info {
+    color: $gunsmoke;
+    font-size: ms(-1);
+  }
+}

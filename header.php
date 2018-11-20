@@ -31,16 +31,22 @@
 			get_template_part('template-parts/components/site', 'nav');
 			get_template_part('template-parts/components/utility', 'nav');
 		?>
-
-		<?php
-			/**
-			 *  Image or blank for page header.
-			 **/
-			if ( is_singular() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
-			<div class="page-cover-image">
-				<?php nus_post_thumbnail(); ?>
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</div>
-		<?php endif; ?>
 	</header><!-- #masthead -->
+	<?php
+		/**
+		 *  Image or blank for page header.
+		 **/
+		if ( is_singular() && !is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
+		<div class="page-cover-image">
+			<?php nus_post_thumbnail(); ?>
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</div>
+	<?php
+		elseif ( is_singular() && is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
+		<div class="page-cover-image">
+			<?php nus_post_thumbnail(); ?>
+			<?php the_title( '<div class="home-tagline">', '</div>' ); ?>
+		</div>
+	<?php
+		endif; ?>
 	<div id="content" class="site-content">

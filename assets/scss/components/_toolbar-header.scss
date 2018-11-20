@@ -1,0 +1,28 @@
+.site-header {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'nav-utility nav-utility nav-utility nav-utility'
+    'branding branding branding menu-toggle'
+    'nav-main nav-main nav-main nav-main';
+  width: 100%;
+  z-index: 1000;
+  @include mq(medium) {
+    align-items: center;
+    grid-template-areas:
+      'nav-utility nav-utility nav-utility nav-utility'
+      'branding branding nav-main nav-main';
+  }
+  .home & {
+    background-color: rgba($white, 0);
+    transition: all .2s ease-in-out;
+    position: fixed;
+    top: 0;
+
+  }
+  .scrolling & {
+    background-color: rgba($white, 1);
+    transition: all .2s ease-in-out;
+    box-shadow: 0 -3px 8px $black;
+  }
+}

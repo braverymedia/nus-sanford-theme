@@ -1,0 +1,20 @@
+.site-branding {
+  grid-area: branding;
+  align-content: center;
+  margin: 20px 0 20px 25px;
+  .custom-logo {
+    color: $white;
+    fill: $white;
+    width: 181px;
+    height: 50px;
+    transition: fill .2s ease-in-out;
+  }
+  .scrolling & {
+    .custom-logo {
+      color: $pistachio;
+      fill: $pistachio;
+      transition-delay: .1s;
+      transition: fill .2s ease-in-out;
+    }
+  }
+}

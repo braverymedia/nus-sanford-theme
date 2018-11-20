@@ -1,0 +1,139 @@
+.main-navigation {
+  align-self: stretch;
+  display: grid;
+  align-content: stretch;
+  grid-area: nav-main;
+  color: $white;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  font-weight: $weight__semibold;
+  text-transform: uppercase;
+  ul {
+    margin: 0 0;
+    padding: 0 0;
+  }
+  li {
+    list-style: none;
+    text-align: center;
+    a {
+      display: block;
+      padding: .5em;
+    }
+  }
+  @include mq(medium) {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    font-size: ms(-2);
+    padding-right: 25px;
+    a, a:hover {
+      color: $black;
+    }
+    .home & {
+      a, a:hover {
+        color: $white;
+      }
+    }
+    // Dropdown menu setup
+    .menu {
+      display: grid;
+      align-content: stretch;
+      justify-content: end;
+      grid-auto-flow: column;
+      grid-column-gap: 10px;
+      > li {
+        position: relative;
+        display: flex;
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+        }
+        span {
+          position: relative;
+          &:after {
+            content: '';
+            height: 2px;
+            background: $pistachio;
+            width: 100%;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+          }
+        }
+        > ul {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          z-index: -1;
+          width: 170%;
+          padding: ms(-2) ms(0);
+          border-bottom-right-radius: 15px;
+          transform: translateX(-16px);
+          opacity: 0;
+          visibility: hidden;
+          transition: all .3s ease-in-out;
+          box-shadow: 0 3px 16px -8px #000;
+        }
+        &:hover {
+          > ul {
+            transition: all .3s ease-in-out;
+            visibility: visible;
+            opacity: 1;
+          }
+          span:after {
+            transition: opacity .3s ease-in-out;
+            opacity: 1;
+          }
+        }
+      }
+      .sub-menu {
+        background: $denim;
+        font-weight: $weight__book;
+        text-transform: none;
+        a {
+          -webkit-transform:translate3d(0,0,0);
+          color: $white;
+          text-decoration: none !important;
+          &:hover {
+            font-weight: $weight__semibold;
+            color: $white;
+          }
+        }
+      }
+      .svg-icon {
+        width: 12px;
+        height: 12px;
+      }
+      li {
+        text-align: left;
+      }
+    }
+
+  }
+}
+button.menu-toggle {
+  grid-area: menu-toggle;
+  align-content: end;
+  @include button-blank();
+  color: $white;
+  transition: color .2s ease-in-out;
+  @include mq(medium) {
+    display: none;
+  }
+}
+.scrolling {
+  button.menu-toggle {
+    color: $black;
+    transition: color .2s ease-in-out;
+  }
+  .main-navigation {
+    a, a:hover {
+      color: $black;
+    }
+  }
+}

@@ -8,8 +8,8 @@
   <aside class="contact">
     <h2><?php echo __('Questions?', 'nus'); ?></h2>
     <ul class="contact-methods">
-      <li><span class="contact--phone"><a href="tel://<?php echo $phone_plain; ?>"><?php echo $phone; ?></a></span></li>
-      <li><span class="contact--email"><a href="mailto:<?php echo $email; ?>" title="Email Sanford Harmony"><?php echo $email; ?></a></span></li>
+      <li><span class="contact--phone"><?php echo nus_get_icon_svg( 'phone', '16px'); ?> <a href="tel://<?php echo $phone_plain; ?>"><?php echo $phone; ?></a></span></li>
+      <li><span class="contact--email"><?php echo nus_get_icon_svg( 'email', '16px'); ?> <a href="mailto:<?php echo $email; ?>" title="Email Sanford Harmony"><?php echo $email; ?></a></span></li>
     </ul>
   </aside>
 <?php } ?>
