@@ -21,4 +21,8 @@ new SVGInjector().inject(document.querySelectorAll('img[src$=".svg"]'));
     detectScrollDistance();
   });
 
+  $('.menu-toggle').on('click', function(){
+    $('body').toggleClass('menu-open');
+  });
+
 })(jQuery, this);
