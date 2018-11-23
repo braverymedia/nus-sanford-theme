@@ -39,7 +39,7 @@ add_filter( 'body_class', 'nus_body_classes' );
  * Adds custom class to the array of posts classes.
  */
 function nus_post_classes( $classes, $class, $post_id ) {
-	
+
 	if ( is_single() || is_page() ) {
 		global $post;
 		$slug = $post->post_name;
@@ -177,6 +177,13 @@ function nus_add_dropdown_icons( $output, $item, $depth, $args ) {
 	return $output;
 }
 add_filter( 'walker_nav_menu_start_el', 'nus_add_dropdown_icons', 10, 4 );
+
+// Replaces the excerpt "Read More" text by a link
+function nus_excerpt_more($more) {
+       global $post;
+	return '<a class="post-more-link" href="'. get_permalink($post->ID) . '" title="Read the full post">&hellip;</a>';
+}
+add_filter('excerpt_more', 'nus_excerpt_more');
 
 /**
  * Convert HSL to HEX colors

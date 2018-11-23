@@ -12,9 +12,10 @@
  */
 function nus_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
+		'type' 	 		=> 'click',
+		'container' => 'posts-area',
 		'render'    => 'nus_infinite_scroll_render',
-		'footer'    => 'page',
+		'footer'    => false,
 	) );
 
 	// Add theme support for Responsive Videos.
@@ -49,10 +50,16 @@ function nus_infinite_scroll_render() {
 		if ( is_search() ) :
 			get_template_part( 'template-parts/content', 'search' );
 		else :
-			get_template_part( 'template-parts/content', get_post_type() );
+			get_template_part( 'template-parts/content', 'excerpt' );
 		endif;
 	}
 }
+
+function nus_jetpack_infinite_scroll_js_settings( $settings ) {
+	$settings['text'] = __( 'Load more', 'l18n' );
+	return $settings;
+}
+add_filter( 'infinite_scroll_js_settings', 'nus_jetpack_infinite_scroll_js_settings' );
 
 function nus_jetpack_remove_share() {
     remove_filter( 'the_content', 'sharing_display',19 );

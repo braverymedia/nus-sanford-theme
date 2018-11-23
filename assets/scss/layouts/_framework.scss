@@ -10,4 +10,7 @@ body {
   @include mq(large) {
     padding: 0 0;
   }
+  .blog #main &, .archive #main & {
+    padding-bottom: 55px;
+  }
 }

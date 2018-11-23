@@ -1,8 +1,8 @@
 <div class="entry-meta">
-  <?php nus_posted_on(); ?>
-	<?php nus_posted_by(); ?>
-	<?php
-  // @TODO add category list
+  <?php
+    nus_posted_by();
+    nus_posted_on();
+    nus_first_category_link();
 
 	// Edit post link.
 		edit_post_link(

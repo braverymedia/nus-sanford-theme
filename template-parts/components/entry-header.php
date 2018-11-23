@@ -8,7 +8,11 @@
  */
  ?>
 
-<?php if ( ! is_page() ) : ?>
-<?php get_template_part('template-parts/components/entry', 'meta'); ?>
-<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-<?php endif; ?>
+<?php
+  if ( ! is_page() ) :
+
+    the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '">', '</a></h2>' );
+    get_template_part('template-parts/components/entry', 'meta');
+
+  endif;
+?>

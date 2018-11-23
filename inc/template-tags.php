@@ -50,7 +50,7 @@ if ( ! function_exists( 'nus_posted_by' ) ) :
 	 */
 	function nus_posted_by() {
 		printf(
-			'<span class="byline"><span class="screen-reader-text">%1$s</span><span class="author vcard"><a class="url fn n" href="%2$s">%3$s</a></span></span>',
+			'<span class="byline">By <span class="author vcard"><a class="url fn n" href="%2$s">%3$s</a></span></span>',
 			/* translators: 1: SVG icon. 2: post author, only visible to screen readers. 3: author link. */
 			__( 'By', 'nus' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
@@ -94,29 +94,33 @@ if ( ! function_exists( 'nus_posted_on' ) ) :
 function nus_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 	}
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
+		esc_html( get_the_date( 'n/j/Y' ) ),
 		esc_attr( get_the_modified_date( 'c' ) ),
 		esc_html( get_the_modified_date() )
 	);
 
-	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'nus' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
-
-	$byline = sprintf(
-		_x( 'by %s', 'post author', 'nus' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
-
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	echo '<span class="posted-on">' . $time_string . '</span>';
 
 }
+endif;
+
+if ( ! function_exists( 'nus_first_category_link' ) ) :
+	/**
+	 * Gets first category and displays it as a link.
+	 */
+	function nus_first_category_link() {
+		$cat = get_the_category();
+		if ( ! empty( $cat ) ) {
+			$first_cat_string = '<a href="'. get_category_link( $cat[0]->term_id ) .'" title="View all news in the '. $cat[0]->name .' category.">' . $cat[0]->name . '</a>';
+
+			echo '<span class="post-category">' . $first_cat_string . '</span>';
+		}
+	}
 endif;
 
 if ( ! function_exists( 'nus_entry_footer' ) ) :

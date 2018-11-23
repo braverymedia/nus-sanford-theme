@@ -37,13 +37,13 @@ $breakpoints: (
 }
 
 @mixin button($color, $background, $border) {
-	color: $color;
+  color: $color;
   background-color: $background;
   border: 0;
   border-color: $border;
   display: block;
   font-family: $font__default-heading-stack;
-  @include medium() {
+  @include mq(medium) {
     display: inline-block;
   }
 

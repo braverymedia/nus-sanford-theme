@@ -18,23 +18,29 @@ get_header(); ?>
 
 		<?php
 			get_template_part( 'template-parts/components/page', 'header' );
-			if ( have_posts() ) {
-					// Load posts loop.
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'template-parts/content/content', 'excerpt' );
-					}
-					// Previous/next page navigation.
-					nus_the_posts_navigation();
-			 } else {
-					// If no content, include the "No posts found" template.
-					get_template_part( 'template-parts/content/content', 'none' );
+			if ( have_posts() ) { ?>
+			<div class="inner-bounds">
+				<section id="posts-area">
+					<?php
+							// Load posts loop.
+							while ( have_posts() ) {
+								the_post();
+								get_template_part( 'template-parts/content/content', 'excerpt' );
+							}
+							// Previous/next page navigation.
+							nus_the_posts_navigation();
+					 } else {
+							// If no content, include the "No posts found" template.
+							get_template_part( 'template-parts/content/content', 'none' );
 
-			 }
-			 // Sidebar widgets aren't ever full-height, so load them here
-			 get_sidebar();
-			?>
-
+					 }
+					?>
+				</section>
+			<?php
+				 // Sidebar widgets aren't ever full-height, so load them here
+				 get_sidebar();
+				?>
+			</div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
