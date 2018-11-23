@@ -1,4 +1,13 @@
+body {
+  &:not(.home) {
+    padding-top: 140px;
+  }
+}
 .inner-bounds {
+  padding: 0 25px;
   max-width: 1200px;
   margin: 0 auto;
+  @include mq(large) {
+    padding: 0 0;
+  }
 }

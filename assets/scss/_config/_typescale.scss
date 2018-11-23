@@ -1,13 +1,17 @@
 
 // Modular Scale Config
 $modularscale: (
-    base: 1.125rem,
-    ratio: $major-second
+    base: .889em,
+    ratio: $major-second,
+    767px: (
+      base: 1.125em,
+    ),
 );
 
 // Overwrite Normalize.css
 body {
     font-family: $font__default-stack;
+    font-weight: $weight__book;
     font-size: ms(0);
     line-height: 1.667;
     font-smoothing: antialiased;

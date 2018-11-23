@@ -1,6 +1,8 @@
 .site-header {
   display: grid;
   grid-template-columns: 10vw 10vw auto 10vw 10vw;
+  grid-template-rows: 40px auto;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
