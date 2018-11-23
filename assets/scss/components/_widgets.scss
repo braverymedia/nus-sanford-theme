@@ -1,7 +1,4 @@
 .widget {
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  box-shadow: 0 0 8px -2px #000;
   padding: 15px;
   .widget-title {
     color: $medium-carmine;
@@ -10,6 +7,9 @@
     border-bottom: 1px solid rgba($gunsmoke, .4);
   }
   &.widget_categories {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 8px -2px #000;
     ul, li {
       margin: 0;
       padding: 0;

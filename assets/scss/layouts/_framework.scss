@@ -1,3 +1,12 @@
+%inner-bounds {
+  padding: 0 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include mq(large) {
+    padding: 0 0;
+  }
+}
+
 body {
   &:not(.home) {
     padding-top: 105px;
@@ -12,17 +21,25 @@ body {
     }
   }
 }
-.inner-bounds {
-  padding: 0 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-  @include mq(large) {
-    padding: 0 0;
-  }
-  .blog #main &, .archive #main & {
-    padding-bottom: 55px;
-  }
-}
 .widget-area {
   padding: 45px 0 0;
+  margin-bottom: 45px;
+  @include mq(medium) {
+    padding-top: 0;
+    .widget {
+      position: sticky;
+      top: 185px;
+    }
+  }
+}
+.site-main {
+  @extend %inner-bounds;
+  @include mq(medium) {
+    display: grid;
+    grid-template-columns: 65vw 25vw;
+    grid-column-gap: 5vw;
+  }
+}
+.site-content {
+  padding-bottom: 55px;
 }

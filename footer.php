@@ -14,7 +14,7 @@
 
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer primary" role="contentinfo">
-		<div class="inner-bounds">
+		<div class="footer-content">
 			<section class="footer-menus" role="navigation">
 			<?php if ( has_nav_menu( 'footer-menu' ) ) : ?>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'nus' ); ?>">

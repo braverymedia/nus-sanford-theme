@@ -14,12 +14,12 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
 		<?php
 			get_template_part( 'template-parts/components/page', 'header' );
+		?>
+		<main id="main" class="site-main" role="main">
+		<?php
 			if ( have_posts() ) { ?>
-			<div class="inner-bounds">
 				<section id="posts-area">
 					<?php
 							// Load posts loop.
@@ -40,9 +40,7 @@ get_header(); ?>
 				 // Sidebar widgets aren't ever full-height, so load them here
 				 get_sidebar();
 				?>
-			</div>
 		</main><!-- #main -->
-	</section><!-- #primary -->
-
+	</section>
 <?php
 	get_footer();

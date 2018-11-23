@@ -6,5 +6,6 @@
   h1 {
     font-weight: $weight__book;
     letter-spacing: -.03em;
+    @extend %inner-bounds;
   }
 }

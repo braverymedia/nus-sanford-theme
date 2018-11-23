@@ -22,6 +22,9 @@
     color: $gunsmoke;
     font-size: ms(-1);
   }
+  .footer-content {
+    @extend %inner-bounds;
+  }
   @include mq(small) {
     .footer-menus {
       display: flex;

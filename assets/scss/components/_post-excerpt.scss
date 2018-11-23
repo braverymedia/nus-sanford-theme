@@ -1,5 +1,8 @@
 .blog, .archive {
   .type-post {
+    .post-thumbnail {
+      margin-top: 0;
+    }
     h3, h2 {
       color: $medium-carmine;
       > a {
