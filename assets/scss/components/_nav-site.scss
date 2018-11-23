@@ -12,9 +12,16 @@
   width: 100%;
   font-weight: $weight__semibold;
   text-transform: uppercase;
+  min-height: 100vh;
+  transition: all .3s ease-in-out;
   ul {
     margin: 0 0;
     padding: 0 0;
+    > li {
+      ul {
+        display: none;
+      }
+    }
   }
   li {
     list-style: none;
@@ -23,6 +30,16 @@
       display: block;
       padding: .5em;
     }
+    .svg-icon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .menu-open & {
+    background-color: $white;
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in-out;
   }
   @include mq(medium) {
     position: static;
@@ -32,6 +49,7 @@
     grid-column: 3 / end;
     grid-row: 2;
     padding-right: 25px;
+    min-height: none;
     a, a:hover {
       color: $black;
     }
@@ -108,10 +126,6 @@
             color: $white;
           }
         }
-      }
-      .svg-icon {
-        width: 12px;
-        height: 12px;
       }
       li {
         text-align: left;

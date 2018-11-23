@@ -1,6 +1,15 @@
 body {
   &:not(.home) {
-    padding-top: 140px;
+    padding-top: 105px;
+    @include mq(medium) {
+      padding-top: 140px;
+    }
+  }
+  &.menu-open {
+    overflow: hidden;
+    @include mq(medium) {
+      overflow: auto;
+    }
   }
 }
 .inner-bounds {
