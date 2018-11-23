@@ -3,7 +3,7 @@
   display: grid;
   align-content: stretch;
   grid-area: nav-main;
-  grid-column: 1 / span 3;
+  grid-column: 1 / end;
   grid-row: 3;
   color: $white;
   visibility: hidden;
