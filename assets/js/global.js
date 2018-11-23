@@ -5,7 +5,7 @@ new SVGInjector().inject(document.querySelectorAll('img[src$=".svg"]'));
 
 // jQuery no conflict stuff
 (function ($) {
-  // Header color effect
+  // Tooling for color + shadow effect
   function detectScrollDistance() {
     var scrollDistance = $(window).scrollTop();
     console.log(scrollDistance);
@@ -15,11 +15,10 @@ new SVGInjector().inject(document.querySelectorAll('img[src$=".svg"]'));
       $('body').removeClass('scrolling');
     }
   }
-  if ( $('body').hasClass('home') ) {
+  // Add/remove the scrolling class
+  detectScrollDistance();
+  $(window).on('scroll', function() {
     detectScrollDistance();
-    $(window).on('scroll', function() {
-      detectScrollDistance();
-    })
-  }
+  });
 
 })(jQuery, this);

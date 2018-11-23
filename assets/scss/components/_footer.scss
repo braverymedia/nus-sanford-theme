@@ -22,4 +22,34 @@
     color: $gunsmoke;
     font-size: ms(-1);
   }
+  @include mq(small) {
+    .footer-menus {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        font-weight: $weight__semibold;
+        font-size: ms(-2);
+        margin-bottom: .5em;
+        li {
+          display: inline-block;
+        }
+        &.footer-links-menu li {
+          margin-right: 5px;
+        }
+        &.social-links-menu {
+          text-align: right;
+          li {
+            margin-left: 5px;
+            .svg-icon {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+    .site-info {
+      font-size: ms(-2);
+    }
+  }
 }

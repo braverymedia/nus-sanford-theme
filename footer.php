@@ -14,7 +14,8 @@
 
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer primary" role="contentinfo">
-			<div class="footer-menus" role="navigation">
+		<div class="inner-bounds">
+			<section class="footer-menus" role="navigation">
 			<?php if ( has_nav_menu( 'footer-menu' ) ) : ?>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'nus' ); ?>">
 					<?php
@@ -44,12 +45,13 @@
 						?>
 					</nav><!-- .social-navigation -->
 				<?php endif; ?>
-			</div>
-		<div class="site-info">
-			<aside id="legal">
-				<p><span class="copyright">Copyright &copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>. All Rights Reserved.</span> <a href="http://bravery.co/?c" target="_blank" title="Success Demands Bravery" class="credit screen-reader-text">Built with Bravery.</a></p>
-			</aside>
-		</div><!-- .site-info -->
+			</section>
+			<section class="site-info">
+				<aside id="legal">
+					<p><span class="copyright">Copyright &copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>. All Rights Reserved.</span> <a href="http://bravery.co/?c" target="_blank" title="Success Demands Bravery" class="credit screen-reader-text">Built with Bravery.</a></p>
+				</aside>
+			</section><!-- .site-info -->
+		</div>
 	</footer><!-- #colophon -->
 
 	<?php wp_footer(); ?>

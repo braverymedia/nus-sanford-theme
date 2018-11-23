@@ -17,6 +17,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
+			get_template_part( 'template-parts/components/page', 'header' );
 			if ( have_posts() ) {
 					// Load posts loop.
 					while ( have_posts() ) {

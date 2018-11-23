@@ -1,27 +1,28 @@
 .site-header {
-  position: relative;
   display: grid;
-  grid-template-areas:
-    'nav-utility nav-utility nav-utility nav-utility'
-    'branding branding branding menu-toggle'
-    'nav-main nav-main nav-main nav-main';
+  grid-template-columns: 10vw 10vw auto 10vw 10vw;
+  position: fixed;
+  top: 0;
   width: 100%;
+  height: 140px;
   z-index: 1000;
   @include mq(medium) {
     align-items: center;
-    grid-template-areas:
-      'nav-utility nav-utility nav-utility nav-utility'
-      'branding branding nav-main nav-main';
+    grid-template-columns: 12vw 12vw auto 12vw 12vw;
   }
   .home & {
     background-color: rgba($white, 0);
     transition: all .2s ease-in-out;
-    position: fixed;
-    top: 0;
-
   }
   .scrolling & {
     background-color: rgba($white, 1);
+    transition: all .2s ease-in-out;
+    box-shadow: 0 -3px 8px $black;
+  }
+}
+body:not(.home) .site-header {
+  background-color: rgba($white, 1);
+  .scrolling & {
     transition: all .2s ease-in-out;
     box-shadow: 0 -3px 8px $black;
   }

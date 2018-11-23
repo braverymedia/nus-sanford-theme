@@ -23,6 +23,14 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/acf-json/group_5bf476d355249.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf476d355249-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3518,6 +3526,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/layouts/_framework.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_framework.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/layouts/_layouts.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3879,6 +3900,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/template-parts/components/entry-meta.php",
+		"oF": 0
+		},
+	"/template-parts/components/page-header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/components/page-header.php",
 		"oF": 0
 		},
 	"/template-parts/components/site-branding.php": {

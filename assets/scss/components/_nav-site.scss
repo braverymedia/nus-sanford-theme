@@ -3,6 +3,8 @@
   display: grid;
   align-content: stretch;
   grid-area: nav-main;
+  grid-column: 1 / span 3;
+  grid-row: 3;
   color: $white;
   visibility: hidden;
   opacity: 0;
@@ -27,6 +29,8 @@
     visibility: visible;
     opacity: 1;
     font-size: ms(-2);
+    grid-column: 3 / end;
+    grid-row: 2;
     padding-right: 25px;
     a, a:hover {
       color: $black;
@@ -118,15 +122,21 @@
 }
 button.menu-toggle {
   grid-area: menu-toggle;
-  align-content: end;
+  grid-column-start: 5;
+  grid-column-end: end;
+  grid-row: 2;
+  text-align: right;
   @include button-blank();
   color: $white;
   transition: color .2s ease-in-out;
+  .svg-icon {
+    margin-right: 25px;
+  }
   @include mq(medium) {
     display: none;
   }
 }
-.scrolling {
+.scrolling, body:not(.home) {
   button.menu-toggle {
     color: $black;
     transition: color .2s ease-in-out;
