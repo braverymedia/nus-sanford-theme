@@ -4,7 +4,8 @@ $modularscale: (
     base: .889em,
     ratio: $major-second,
     767px: (
-      base: 1.125em,
+      base: 1.125rem,
+      ratio: $major-second,
     ),
 );
 
@@ -37,4 +38,10 @@ h2 {
 }
 h1 {
   font-size: ms(8); // 46px
+}
+%super {
+  font-size: ms(10);
+  @include mq(medium){
+    font-size: ms(12);
+  }
 }

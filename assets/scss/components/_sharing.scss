@@ -1,0 +1,37 @@
+.sharedaddy {
+  background-color: #f2f1f0;
+  padding: 5px 20px;
+  h3.sd-title {
+    font-weight: $weight__bold !important;
+    color: $black !important;
+    font-size: ms(3) !important;
+    margin-bottom: 0 !important;
+    &:before {
+      display: none !important;
+    }
+  }
+  .sd-social-icon .sd-content ul li[class*='share-'] a.sd-button {
+    background-color: $denim !important;
+    &:hover {
+      background-color: $bahama-blue !important;
+      opacity: 1 !important;
+    }
+  }
+  .sd-content ul {
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      margin-bottom: 0 !important;
+    }
+  }
+  @include mq(medium) {
+    padding: 15px 20px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

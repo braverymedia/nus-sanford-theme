@@ -1,0 +1,11 @@
+.single {
+  h1 {
+    @extend h2;
+  }
+  .entry-header {
+    margin-bottom: 35px;
+  }
+  .entry-content {
+    font-size: 18px;
+  }
+}

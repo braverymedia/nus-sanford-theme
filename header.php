@@ -36,17 +36,27 @@
 		/**
 		 *  Image or blank for page header.
 		 **/
-		if ( is_singular() && !is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
+		if ( is_singular() && !is_single() && !is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
 		<div class="page-cover-image">
 			<?php nus_post_thumbnail(); ?>
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</div>
 	<?php
-		elseif ( is_singular() && is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
+		elseif ( is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
 		<div class="page-cover-image">
 			<?php nus_post_thumbnail(); ?>
 			<?php the_title( '<div class="home-tagline">', '</div>' ); ?>
 		</div>
 	<?php
-		endif; ?>
+		else :
+			get_template_part( 'template-parts/components/page', 'header' );
+		endif;
+
+		/**
+		 *  breadcrumbs
+		 **/
+		if ( ! is_front_page() ) {
+			get_template_part('template-parts/components/breadcrumbs');
+		}
+	?>
 	<div id="content" class="site-content">

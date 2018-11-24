@@ -14,7 +14,11 @@
 	<header class="entry-header">
 		<?php get_template_part( 'template-parts/components/entry', 'header' ); ?>
 	</header><!-- .entry-header -->
-
+	<?php
+		if ( has_post_thumbnail() ) {
+			nus_post_thumbnail();
+		}
+	?>
 	<div class="entry-content">
 		<?php
 		the_content(
