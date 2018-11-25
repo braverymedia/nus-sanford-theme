@@ -33,10 +33,12 @@ body {
 }
 .site-main {
   @extend %inner-bounds;
-  @include mq(medium) {
-    display: grid;
-    grid-template-columns: 70% 25%;
-    grid-column-gap: 5%;
+  body:not(.home) & {
+    @include mq(medium) {
+      display: grid;
+      grid-template-columns: 70% 25%;
+      grid-column-gap: 5%;
+    }
   }
 }
 .site-content {

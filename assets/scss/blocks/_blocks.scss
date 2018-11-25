@@ -109,6 +109,7 @@
 		max-width: 100%;
 	}
 
+
 }
 
 /*
@@ -402,13 +403,13 @@
 				// background-color: $color__link;
 			}
 
-			&.alignfull {
-
-				@include mq(medium) {
-					padding-left: calc(10% + 58px + (2 * #{$size__spacing-unit}));
-					padding-right: calc(10% + 58px + (2 * #{$size__spacing-unit}));
-				}
-			}
+			// &.alignfull {
+			//
+			// 	@include mq(medium) {
+			// 		padding-left: calc(10% + 58px + (2 * #{$size__spacing-unit}));
+			// 		padding-right: calc(10% + 58px + (2 * #{$size__spacing-unit}));
+			// 	}
+			// }
 		}
 	}
 
@@ -487,6 +488,9 @@
 				}
 			}
 			@include mq(medium) {
+				height: 405px;
+			}
+			@include mq(large) {
 				height: 605px;
 			}
 		}
@@ -624,7 +628,21 @@
 			}
 		}
 	}
-
+	.wp-block-embed {
+		margin: 0;
+	}
+	.wp-block-embed__wrapper {
+		iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+	.jetpack-video-wrapper {
+		margin-bottom: 0 !important;
+	}
 	//! Twitter Embed
 	.wp-block-embed-twitter {
 		overflow: hidden;
@@ -749,7 +767,7 @@
 
 	//! Custom colors
 	.has-primary-background-color {
-		// background-color: $color__link;
+		background-color: $denim;
 
 		p,
 		h1,
@@ -765,6 +783,11 @@
 }
 
 // Atomic Blocks container
+.ab-block-container {
+	h2 {
+		margin-bottom: 25px;
+	}
+}
 .ab-container-image-wrap {
 	.ab-container-image {
 		object-position: bottom left;
@@ -775,12 +798,22 @@
 }
 
 // Content grid and chiclet layout
-.nus-block-content-grid {
-	display: grid;
+.nus-block-content-grid, .nus-block-chiclet-grid {
 	padding-top: 35px;
 	h2 {
 		@extend h1;
 		text-align: center;
+	}
+	.wp-block--inner {
+		display: grid;
+	}
+}
+.nus-block-chiclet-grid {
+	.wp-block--inner {
+		@include mq(medium) {
+			grid-auto-flow: column;
+			grid-column-gap: 5.5%;
+		}
 	}
 }
 
@@ -792,7 +825,7 @@
 	margin-top: 35px;
 	text-align: center;
 	&:hover {
-		background-color: $red-robin;
+		// background-color: $red-robin;
 	}
 	&--inner {
 		padding: 30px 20px;
@@ -807,17 +840,24 @@
 .nus-block-testimonial {
 	max-width: 100%;
 	color: $white;
+	margin-top: 0 !important;
 	.slider-container {
 		padding-bottom: 90px;
 	}
 	.nus-testimonial {
-		display: grid;
-		align-content: center;
-		justify-content: center;
 		padding: 35px 25px;
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		.testimonial--inner {
+			display: grid;
+			align-content: center;
+			justify-content: center;
+		}
 		&--image {
 			background-color: $gunsmoke;
 			display: flex;
+			grid-area: testimonial-image;
 			height: 250px;
 			width: 250px;
 			border: 5px solid;
@@ -845,17 +885,51 @@
 				border-color: $orange-red;
 			}
 			.entry-content {
+				grid-area: testimonial-content;
 				padding: 0 0;
+				align-self: center;
 				p:first-child {
 					font-weight: $weight__semibold;
 				}
 			}
 		}
+		@include mq(medium) {
+			padding: 0;
+			height: 275px;
+			overflow: hidden;
+			.testimonial--inner {
+				width: 85vw;
+			}
+			&.has-quote .testimonial--inner {
+				grid-template: "testimonial-image testimonial-content";
+				grid-template-columns: auto 55%;
+				figure {
+					margin-right: 35px;
+				}
+			}
+			&.no-quote .testimonial--inner {
+				// reverse the layout
+				grid-template: "testimonial-content testimonial-image";
+				grid-template-columns: 55% auto;
+				figure {
+					margin-left: 35px;
+				}
+			}
+			&--image {
+				height: 350px;
+				width: 350px;
+			}
+		}
 	}
 	blockquote {
+		grid-area: testimonial-content;
 		font-size: ms(3);
 		text-align: center;
 		margin-top: 10px;
+		align-self: center;
+		@include mq(medium) {
+			text-align: left;
+		}
 		p {
 			font-weight: $weight__semibold;
 		}
@@ -872,6 +946,9 @@
 				font-size: ms(0);
 				color: $white;
 				font-style: italic;
+			}
+			@include mq(medium) {
+				padding-top: 2vw;
 			}
 		}
 	}
@@ -930,7 +1007,7 @@
 	@include mq(medium) {
 		display: grid;
 		grid-template-areas: "media-text-media media-text-content";
-		grid-template-columns: 50% auto;
+		grid-template-columns: 50% 50%;
 		grid-template-rows: auto;
 	}
 }

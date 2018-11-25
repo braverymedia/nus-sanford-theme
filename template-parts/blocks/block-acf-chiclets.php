@@ -1,7 +1,7 @@
 <?php
   $section_title = get_field('section_title');
   if ( have_rows('chiclet') ) : ?>
-    <section class="nus-block-content-grid">
+    <section class="nus-block-chiclet-grid">
       <h2><?php echo $section_title; ?></h2>
       <div class="wp-block--inner">
         <?php while ( have_rows('chiclet') ) : the_row('chiclet');
