@@ -34,10 +34,12 @@ h3 {
   font-size: ms(1); // 20px
 }
 h2 {
-  font-size: ms(3); // 24px
+  font-size: ms(5); // 24px
+  font-weight: $weight__book;
 }
 h1 {
   font-size: ms(8); // 46px
+  font-weight: $weight__book;
 }
 %super {
   font-size: ms(10);

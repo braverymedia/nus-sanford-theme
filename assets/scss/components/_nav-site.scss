@@ -135,6 +135,9 @@
 
   }
 }
+@include mq(xlarge) {
+  font-size: ms(1);
+}
 button.menu-toggle {
   grid-area: menu-toggle;
   grid-column-start: 5;

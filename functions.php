@@ -253,6 +253,11 @@ require get_template_directory() . '/classes/class-nus-svg-icons.php';
 require get_template_directory() . '/classes/class-nus-walker-comment.php';
 
 /**
+ * ACF Block settings.
+ */
+require get_template_directory() . '/inc/acf.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

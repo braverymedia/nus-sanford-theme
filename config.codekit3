@@ -31,6 +31,70 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5bf9b660273da.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9b660273da-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9b93aa3736.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9b93aa3736-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9bae1203f6.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9bae1203f6-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9bf36eb780.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9bf36eb780-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9c7741d70c.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9c7741d70c-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9c91a45865.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9c91a45865-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9cff693962.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9cff693962-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5bf9e8266f9c6.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9e8266f9c6-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3965,6 +4029,62 @@
 		"oAP": "/min/style.min.css",
 		"oF": 1,
 		"oS": 3
+		},
+	"/template-parts/blocks/block-acf-accordion.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-accordion.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-chiclets.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-chiclets.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-content-grid.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-content-grid.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-download-bar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-download-bar.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-image-slider.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-image-slider.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-recent-posts.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-recent-posts.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-social-follow-bar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-social-follow-bar.php",
+		"oF": 0
+		},
+	"/template-parts/blocks/block-acf-testimonial.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/blocks/block-acf-testimonial.php",
+		"oF": 0
 		},
 	"/template-parts/components/breadcrumbs.php": {
 		"cB": 0,

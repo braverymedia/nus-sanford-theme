@@ -1,15 +1,22 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.wp-block-button__link {
 	border: 1px solid;
-	// border-color: $color__border-button;
-	// background: $color__background-button;
-	color: rgba($black, .8);
+	border-radius: 25px !important;
+	color: $white;;
 	font-size: ms(0);
 	line-height: 1;
 	padding: .6em 1em .4em;
-
+	margin-top: 15px;
+	width: 50vw;
+	&.has-primary-background-color {
+		background-color: $denim;
+		&:hover {
+			background-color: $bahama-blue;
+		}
+	}
 	&:hover {
 		// border-color: $color__border-button-hover;
 	}
