@@ -19,7 +19,11 @@
 
 		@include mq(medium) {
 			width: 100%;
-			max-width: 100%;
+			max-width: 900px;
+		}
+		@include mq(large) {
+			width: 100%;
+			max-width: 1200px;
 		}
 	}
 
@@ -634,8 +638,16 @@
 	}
 	.wp-block-embed {
 		margin: 0;
-		&.alignwide {
+		&.alignwide, &.aligncenter {
 			margin: 35px auto;
+			@include mq(medium) {
+				width: 100%;
+				max-width: 900px;
+			}
+			@include mq(large) {
+				width: 100%;
+				max-width: 1200px;
+			}
 		}
 	}
 	.wp-block-embed__wrapper {

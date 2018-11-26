@@ -58,11 +58,15 @@
 	.wp-block--inner {
 		align-content: stretch;
 		grid-row-gap: 35px;
-		@include mq(medium) {
-      font-size: ms(2);
+	}
+	@include mq(medium) {
+		padding: 55px 0;
+		.wp-block--inner {
+			font-size: ms(2);
 			padding-left: 0 !important;
 			padding-right: 0 !important;
 		}
+
 	}
 }
 
@@ -73,6 +77,7 @@
 	margin-top: 35px;
 	text-align: center;
   transition: all .3s ease-in-out;
+	overflow: hidden;
 	@include mq(medium) {
 		margin-top: 0;
 	}

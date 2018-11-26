@@ -105,8 +105,11 @@
             transition: opacity .3s ease-in-out;
           }
         }
-        &.current-menu-item:after {
-          opacity: 1;
+        &.current-menu-item,
+        &.current-page-ancestor {
+          span:after {
+            opacity: 1;
+          }
         }
         > ul {
           display: block;
@@ -144,6 +147,12 @@
           color: $white;
           text-decoration: none !important;
           &:hover {
+            font-weight: $weight__semibold;
+            color: $white;
+          }
+        }
+        li.current-menu-item {
+          a {
             font-weight: $weight__semibold;
             color: $white;
           }
