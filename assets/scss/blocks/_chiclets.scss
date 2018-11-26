@@ -1,9 +1,61 @@
+// Grid layouts
+.has-1 {
+	grid-template-columns: 1fr;
+}
+.has-2 {
+	grid-template-columns: 1fr 1fr;
+}
+.has-3 {
+	grid-template-columns: 1fr 1fr 1fr;
+	@include mq(medium) {
+		grid-column-gap: 4%;
+	}
+}
+.has-4 {
+	@include mq(medium) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-column-gap: 4%;
+	}
+	@include mq(large) {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1%;
+	}
+}
+.has-5 {
+	@include mq(medium) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-column-gap: 4%;
+	}
+}
+.has-6 {
+	@include mq(medium) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-column-gap: 4%;
+	}
+}
+.has-7 {
+	@include mq(medium) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-column-gap: 4%;
+	}
+	@include mq(large) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 4%;
+	}
+}
+
 .nus-block-chiclet-grid {
+	padding-top: 0;
 	.wp-block--inner {
+		align-content: stretch;
 		@include mq(medium) {
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-column-gap: 4%;
       font-size: ms(2);
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 	}
 }
@@ -15,6 +67,13 @@
 	margin-top: 35px;
 	text-align: center;
   transition: all .3s ease-in-out;
+	@include mq(medium) {
+		margin-top: 0;
+		margin-bottom: 35px;
+	}
+	&:first-child {
+		margin-top: 0;
+	}
 	&:hover {
 		background-color: $red-robin;
 	}
@@ -44,7 +103,7 @@
     }
 	}
 	h3 {
-		font-size: ms(3);
+		font-size: 1rem;
 		margin-bottom: 35px;
 	}
   &--action {

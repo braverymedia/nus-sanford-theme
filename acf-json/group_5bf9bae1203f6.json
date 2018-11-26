@@ -36,7 +36,7 @@
             },
             "collapsed": "field_5bf9be84375a0",
             "min": 0,
-            "max": 3,
+            "max": 0,
             "layout": "block",
             "button_label": "Add Chiclet",
             "sub_fields": [
@@ -103,7 +103,7 @@
                     "key": "field_5bf9bebc375a3",
                     "label": "Chiclet Link",
                     "name": "chiclet_link",
-                    "type": "url",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -112,8 +112,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": ""
+                    "return_format": "url"
                 }
             ]
         }
@@ -135,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1543111130
+    "modified": 1543197127
 }

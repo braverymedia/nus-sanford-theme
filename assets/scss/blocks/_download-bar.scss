@@ -1,0 +1,41 @@
+.nus-block-download-bar {
+  @extend %inner-bounds;
+  background-color: #F3F3F4;
+  margin: 25px !important;
+  padding: 10px 20px;
+  header {
+    font-weight: $weight__bold;
+    font-size: ms(2);
+    line-height: 1.3;
+    @include mq(medium) {
+      flex: 1 50%;
+    }
+    @include mq(large) {
+      flex: 1 50%;
+      margin-right: 20%; 
+    }
+  }
+  .download-bar--action {
+    @include mq(medium) {
+      flex: 1 50%;
+    }
+    @include mq(large) {
+      flex: 0 1 auto;
+    }
+  }
+  &.download-bar--button {
+    .wp-block-button {
+      margin-bottom: 0;
+      a {
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  @include mq(medium) {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}

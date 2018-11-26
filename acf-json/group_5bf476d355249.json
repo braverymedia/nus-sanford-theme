@@ -272,7 +272,7 @@
                     "key": "field_5bf9bfbd662bf",
                     "label": "Button URL",
                     "name": "button_url",
-                    "type": "url",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -281,8 +281,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": ""
+                    "return_format": "url"
                 }
             ]
         }
@@ -311,5 +310,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1543094224
+    "modified": 1543197080
 }

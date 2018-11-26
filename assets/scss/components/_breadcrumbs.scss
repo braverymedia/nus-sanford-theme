@@ -1,7 +1,6 @@
 .breadcrumbs {
   background-color: $white;
   border-bottom: 1px solid #9e9f9e;
-  padding: 16px 0;
   ul, li {
     list-style: none;
     margin: 0;
@@ -48,6 +47,7 @@
 }
 .breadcrumb-container {
   @extend %inner-bounds;
+  padding: 16px 25px !important;
   display: flex;
   align-items: center;
 }

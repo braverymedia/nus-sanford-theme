@@ -41,11 +41,11 @@ h2 {
   }
 }
 h1 {
-  font-size: ms(8); // 46px
+  font-size: ms(5); // 46px
   font-weight: $weight__book;
 }
 %super {
-  font-size: ms(10);
+  font-size: ms(8);
   @include mq(medium){
     font-size: ms(12);
   }
@@ -60,4 +60,11 @@ p.has-medium-font-size {
 }
 .hero-title {
   @extend %super;
+}
+.entry-content {
+  ol, ul {
+    margin-left: 2em !important;
+    list-style-position: outside;
+    font-size: 1rem;
+  }
 }

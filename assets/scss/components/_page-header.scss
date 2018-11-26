@@ -1,11 +1,9 @@
-.page-header {
+.page-header, .page-cover-image {
   background-color: $denim;
   color: $white;
   padding: 20px 25px;
-  h1, h2 {
-    font-weight: $weight__book;
-    letter-spacing: -.03em;
-    @extend %super;
-    @extend %inner-bounds;
+  .hero-title {
+    position: relative;
+    z-index: 10;
   }
 }

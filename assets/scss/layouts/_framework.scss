@@ -40,10 +40,32 @@ body {
       grid-column-gap: 5%;
     }
   }
+  body.no-sidebar & {
+    @extend %inner-bounds;
+    @include mq(medium) {
+      display: block;
+    }
+  }
 }
 .site-content {
   padding-bottom: 55px;
   @include mq(medium) {
     padding-bottom: 0;
+  }
+}
+.page,
+.single,
+.archive {
+  .entry-content {
+    > p,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > ul,
+    > ol {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 }
