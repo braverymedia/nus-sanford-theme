@@ -10,17 +10,25 @@
       > a {
         color: $medium-carmine;
       }
+      @include mq(medium) {
+        font-size: ms(3);
+      }
     }
     .entry-meta {
       margin: 5px 0 ms(-1);
       > span {
         margin-right: 10px;
         font-size: ms(-1);
+        @include mq(medium) {
+          font-size: ms(0);
+        }
       }
+
     }
     .entry-content {
       p {
         margin-top: 0;
+        font-size: 1.2em;
       }
     }
   }

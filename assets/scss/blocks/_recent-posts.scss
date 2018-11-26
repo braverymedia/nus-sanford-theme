@@ -3,6 +3,12 @@
 	header {
 		h2 {
 			@extend h1;
+			color: $ship-gray;
+			line-height: 1.3;
+			@include mq(medium) {
+				margin-top: 2.5vw;
+				margin-bottom: .25vw !important;
+			}
 		}
 		> a {
 			font-weight: $weight__semibold;

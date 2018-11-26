@@ -34,13 +34,19 @@ body {
   }
 }
 .site-main {
+  margin: 0 auto;
+  padding: 15px 25px 45px;
+  @include mq(medium) {
+    max-width: 1200px;
+    display: grid;
+  }
   body:not(.home).has-sidebar &,
-  body.blog & {
+  body.blog &,
+  body.single &,
+  body.archive & {
     margin: 0 auto;
     padding: 15px 25px 45px;
     @include mq(medium) {
-      max-width: 1200px;
-      display: grid;
       grid-template-columns: 70% 25%;
       grid-column-gap: 5%;
     }
@@ -73,19 +79,21 @@ body {
 .page,
 .single,
 .archive {
-  .entry-content {
-    display: grid;
-    justify-content: center;
-    > p,
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > ul,
-    > ol {
-      padding-left: 25px;
-      padding-right: 25px;
-      max-width: 1200px;
+  .site-main {
+    > .entry-content {
+      display: grid;
+      justify-content: center;
+      > p,
+      > h1,
+      > h2,
+      > h3,
+      > h4,
+      > ul,
+      > ol {
+        padding-left: 25px;
+        padding-right: 25px;
+        max-width: 1200px;
+      }
     }
   }
 }

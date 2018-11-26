@@ -10,7 +10,8 @@
 <header class="page-header">
   <?php
     if ( is_archive() && ! is_home() ) :
-      single_post_title( '<h1 class="page-title archive-title">', ' - ' . get_the_archive_title() . '</h1>' );
+      $current_term = single_term_title( "", false );
+      echo '<h1 class="page-title archive-title">' . get_the_title( get_option('page_for_posts', true) ) . ' - ' . $current_term . '</h1>';
     elseif ( is_home() ) :
       single_post_title( '<h1 class="page-title archive-title posts-page-title">', '</h1>' );
     elseif ( is_single() ) :
