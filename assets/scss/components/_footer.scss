@@ -51,6 +51,9 @@
             }
           }
         }
+        @include mq(medium) {
+          font-size: ms(0);
+        }
       }
     }
     .site-info {
