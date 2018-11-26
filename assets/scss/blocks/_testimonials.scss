@@ -30,11 +30,9 @@
 				object-position: center center;
 			}
 		}
-		&.has-quote {
-			background-color: $denim;
-			.nus-testimonial--image {
-				border-color: $dark-pastel-blue;
-			}
+		background-color: $denim;
+		.nus-testimonial--image {
+			border-color: $dark-pastel-blue;
 		}
 		&.no-quote {
 			background-color: $medium-carmine;
@@ -63,7 +61,7 @@
 				justify-content: space-between;
 				align-content: center;
 			}
-			&.has-quote .testimonial--inner {
+			.testimonial--inner {
 				grid-template: "testimonial-image testimonial-content";
 				grid-template-columns: auto 55%;
 				figure {
