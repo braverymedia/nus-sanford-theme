@@ -24,7 +24,9 @@
   header {
     padding-top: 55px !important;
     h2 {
-      font-size: 2.5em;
+      font-size: ms(10);
+      color: $white;
+      font-weight: $weight__book;
     }
     @include mq(medium) {
       // padding-top: 150px !important;
