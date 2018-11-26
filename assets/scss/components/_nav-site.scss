@@ -188,7 +188,7 @@ button.menu-toggle {
 }
 .scrolling, body:not(.home) {
   button.menu-toggle {
-    color: $black;
+    color: $black !important;
     transition: color .2s ease-in-out;
   }
   .main-navigation {

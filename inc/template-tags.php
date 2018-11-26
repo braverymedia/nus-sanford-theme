@@ -351,6 +351,14 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 	/**
 	 * Breadcrumb navigation
 	 */
+	function nus_breadcrumb_news_parent() {
+		$news_page_id = get_option('page_for_posts', true);
+		$news_parent_page = get_post_ancestors( $news_page_id );
+
+		$news_parent_string = '<a href="' . get_permalink( $news_parent_page[0] ) . '" title="'. get_the_title( $news_parent_page[0] ) .'" class="crumb-news-parent">' . get_the_title( $news_parent_page[0] ) . '</a>';
+
+		return $news_parent_string;
+	}
 	function nus_breadcrumbs() {
 
 	    // Settings
@@ -374,11 +382,7 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 	        echo '<li class="separator separator-home"> ' . $separator . ' </li>';
 
 					if ( is_single() ) {
-						$news_page_id = get_option('page_for_posts', true);
-						$news_parent_page = get_post_ancestors( $news_page_id );
-
-						$news_parent_string = '<a href="' . get_permalink( $news_parent_page[0] ) . '" title="'. get_the_title( $news_parent_page[0] ) .'" class="crumb-news-parent">' . get_the_title( $news_parent_page[0] ) . '</a>';
-
+						$news_parent_string = nus_breadcrumb_news_parent();
 						echo '<li class="item-parent">' . $news_parent_string . '</li>';
 						echo '<li class="separator"> ' . $separator . ' </li>';
 					}
@@ -475,6 +479,10 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 	        } else if ( is_category() ) {
 
 	            // Category page
+							// Custom Parent News Page
+							$news_parent_string = nus_breadcrumb_news_parent();
+							echo '<li class="item-parent">' . $news_parent_string . '</li>';
+							echo '<li class="separator"> ' . $separator . ' </li>';
 	            echo '<li class="item-current item-cat"><strong class="crumb-current crumb-cat">' . single_cat_title('', false) . '</strong></li>';
 
 	        } else if ( is_page() ) {
@@ -521,6 +529,10 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 	            $get_term_slug  = $terms[0]->slug;
 	            $get_term_name  = $terms[0]->name;
 
+							// Custom Parent News Page
+							$news_parent_string = nus_breadcrumb_news_parent();
+							echo '<li class="item-parent">' . $news_parent_string . '</li>';
+							echo '<li class="separator"> ' . $separator . ' </li>';
 	            // Display the tag name
 	            echo '<li class="item-current item-tag-' . $get_term_id . ' item-tag-' . $get_term_slug . '"><strong class="crumb-current crumb-tag-' . $get_term_id . ' crumb-tag-' . $get_term_slug . '">' . $get_term_name . '</strong></li>';
 
@@ -558,7 +570,10 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 	        } else if ( is_author() ) {
 
 	            // Auhor archive
-
+							// Custom Parent News Page
+							$news_parent_string = nus_breadcrumb_news_parent();
+							echo '<li class="item-parent">' . $news_parent_string . '</li>';
+							echo '<li class="separator"> ' . $separator . ' </li>';
 	            // Get the author information
 	            global $author;
 	            $userdata = get_userdata( $author );
@@ -567,6 +582,10 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 	            echo '<li class="item-current item-current-' . $userdata->user_nicename . '"><strong class="crumb-current crumb-current-' . $userdata->user_nicename . '" title="' . $userdata->display_name . '">' . 'Author: ' . $userdata->display_name . '</strong></li>';
 
 	        } else if ( get_query_var('paged') ) {
+							// Custom Parent News Page
+							$news_parent_string = nus_breadcrumb_news_parent();
+							echo '<li class="item-parent">' . $news_parent_string . '</li>';
+							echo '<li class="separator"> ' . $separator . ' </li>';
 
 	            // Paginated archives
 	            echo '<li class="item-current item-current-' . get_query_var('paged') . '"><strong class="crumb-current crumb-current-' . get_query_var('paged') . '" title="Page ' . get_query_var('paged') . '">'.__('Page') . ' ' . get_query_var('paged') . '</strong></li>';
@@ -580,7 +599,15 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 
 	            // 404 page
 	            echo '<li>' . 'Error 404' . '</li>';
-	        }
+	        } elseif ( is_home() ) {
+						$posts_title = get_the_title( get_option('page_for_posts', true) );
+
+						// Custom Parent News Page
+						$news_parent_string = nus_breadcrumb_news_parent();
+						echo '<li class="item-parent">' . $news_parent_string . '</li>';
+						echo '<li class="separator"> ' . $separator . ' </li>';
+						echo '<li class="item-current"><strong class="crumb-current" title="'. $posts_title .'">'. $posts_title .'</strong></li>';
+					}
 
 	        echo '</ul>';
 

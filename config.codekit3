@@ -3663,6 +3663,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/components/_past-webinars.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_past-webinars.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/components/_post-excerpt.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -4027,6 +4040,13 @@
 		"oAP": "/inc/customizer.php",
 		"oF": 0
 		},
+	"/inc/events-calendar-mods.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/inc/events-calendar-mods.php",
+		"oF": 0
+		},
 	"/inc/extras.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -4095,6 +4115,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/languages/readme.txt",
+		"oF": 0
+		},
+	"/layouts/layout-webinars.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/layouts/layout-webinars.php",
 		"oF": 0
 		},
 	"/page.php": {
@@ -4256,6 +4283,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/template-parts/components/entry-meta.php",
+		"oF": 0
+		},
+	"/template-parts/components/events-webinars.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/components/events-webinars.php",
 		"oF": 0
 		},
 	"/template-parts/components/page-header.php": {

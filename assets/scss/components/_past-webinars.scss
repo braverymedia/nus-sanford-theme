@@ -1,0 +1,47 @@
+.nus-section--past-webinars {
+  max-width: 1200px;
+}
+.nus-tribe-event--webinar {
+  background-color: $light-grey;
+  padding: 15px;
+  margin: 25px auto;
+  h2 {
+    color: $medium-carmine;
+    font-size: ms(2);
+    font-weight: $weight__bold;
+    margin-bottom: .75em;
+    a {
+      color: currentColor;
+    }
+  }
+  p {
+    font-size: ms(1);
+  }
+  @include mq(medium) {
+    padding: 15px;
+    .wp-block--inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nus-tribe-event--copy {
+        flex: 1 70%;
+      }
+      .nus-tribe-event--action {
+        flex: 1 250px;
+        margin-left: 40px;
+        .wp-block-button {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 0;
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+  .wp-block-button {
+    margin-bottom: 0;
+  }
+}

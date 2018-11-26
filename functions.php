@@ -324,6 +324,14 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Events Calendar Mods
+ */
+ if ( class_exists('Tribe__Events__Main') ) {
+	 require get_template_directory() . '/inc/events-calendar-mods.php';
+ }
+
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
