@@ -386,7 +386,12 @@ if ( ! function_exists('nus_breadcrumbs') ) :
 						echo '<li class="item-parent">' . $news_parent_string . '</li>';
 						echo '<li class="separator"> ' . $separator . ' </li>';
 					}
-
+					// Events Calendar home
+					if ( tribe_is_event_query() && is_archive() ) {
+						$news_parent_string = nus_breadcrumb_news_parent();
+						echo '<li class="item-parent">' . $news_parent_string . '</li>';
+						echo '<li class="separator"> ' . $separator . ' </li>';
+					}
 	        if ( is_archive() && !is_tax() && !is_category() && !is_tag() ) {
 
 	            echo '<li class="item-current item-archive"><strong class="crumb-current crumb-archive">' . post_type_archive_title($prefix, false) . '</strong></li>';

@@ -17,6 +17,9 @@
   p {
     font-size: ms(1);
   }
+  .wp-block-embed {
+    display: none !important;
+  }
   @include mq(medium) {
     padding: 15px;
     .wp-block--inner {

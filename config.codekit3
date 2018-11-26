@@ -3715,6 +3715,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/components/_tribe-events.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_tribe-events.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/components/_widgets.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -4353,6 +4366,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/template-parts/content/content.php",
+		"oF": 0
+		},
+	"/tribe-events/single-event.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/single-event.php",
 		"oF": 0
 		}
 	},

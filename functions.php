@@ -253,32 +253,6 @@ function nus_editor_customizer_styles() {
 add_action( 'enqueue_block_editor_assets', 'nus_editor_customizer_styles' );
 
 /**
- * Display custom color CSS in customizer and on frontend.
- */
-function nus_colors_css_wrap() {
-
-	// Only include custom colors in customizer or frontend.
-	if ( ( ! is_customize_preview() && 'default' === get_theme_mod( 'colorscheme', 'default' ) ) || is_admin() ) {
-		return;
-	}
-
-	require_once get_parent_theme_file_path( '/inc/color-patterns.php' );
-
-	if ( 'default' === get_theme_mod( 'colorscheme', 'default' ) ) {
-		$primary_color = 199;
-	} else {
-		$primary_color = absint( get_theme_mod( 'colorscheme_primary_hue', 199 ) );
-	}
-	?>
-
-	<style type="text/css" id="custom-theme-colors" <?php echo is_customize_preview() ? 'data-hue="' . $primary_color . '"' : ''; ?>>
-		<?php echo nus_custom_colors_css(); ?>
-	</style>
-	<?php
-}
-add_action( 'wp_head', 'nus_colors_css_wrap' );
-
-/**
  * SVG Icons class.
  */
 require get_template_directory() . '/classes/class-nus-svg-icons.php';
