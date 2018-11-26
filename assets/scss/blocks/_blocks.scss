@@ -833,7 +833,7 @@
 			object-position: bottom center;
 		}
 		@include mq(xlarge) {
-			object-fit: contain;
+			object-fit: cover;
 			object-position: center center;
 		}
 	}
