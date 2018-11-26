@@ -48,9 +48,9 @@ function nus_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
-			get_template_part( 'template-parts/content', 'search' );
+			get_template_part( 'template-parts/content/content', 'search' );
 		else :
-			get_template_part( 'template-parts/content', 'excerpt' );
+			get_template_part( 'template-parts/content/content', 'excerpt' );
 		endif;
 	}
 }
