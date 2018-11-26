@@ -67,3 +67,8 @@
     font-size: ms(1);
   }
 }
+body:not(.home) {
+  .site-footer {
+    margin-top: 55px;
+  }
+}

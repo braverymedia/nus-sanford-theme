@@ -67,6 +67,15 @@ body {
     }
   }
 }
+.post-type-archive-tribe_events {
+  .site-main {
+    @include mq(medium) {
+      display: grid !important;
+      grid-template-columns:100%;
+      grid-column-gap: 5%;
+    }
+  }
+}
 .gform_wrapper {
   @extend %inner-bounds;
   max-width: 1200px !important;
@@ -80,6 +89,8 @@ body {
 .single,
 .archive {
   .entry-content {
+    display: grid;
+    justify-content: center;
     > p,
     > h1,
     > h2,
@@ -90,14 +101,13 @@ body {
       padding-left: 25px;
       padding-right: 25px;
       max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }
 .entry-content {
   > p:first-child {
     margin-top: 55px;
+    justify-self: center;
   }
   > p:last-child {
     margin-bottom: 55px;
