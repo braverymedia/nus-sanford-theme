@@ -9,17 +9,19 @@
     <?php echo $left['text_content']; ?>
   </header>
   <div class="download-bar--action">
-    <?php if ( $button ) { ?>
+    <?php if ( $db_type == 'button' ) { ?>
       <div class="wp-block-button">
         <a href="<?php echo $button['button_url']; ?>" class="wp-block-button__link has-background" style="background-color: <?php echo $button['button_color']; ?>;"><?php echo $button['button_label']; ?></a>
       </div>
-    <?php } ?>
-    <?php if ( have_rows( $right['db_images'] ) ) : while ( have_rows( $right['db_images'] ) ) : the_row( $right['db_images'] );
-      $image = get_sub_field('db_image'); ?>
-      ?>
-      <a href="<?php the_sub_field('db_link'); ?>">
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-      </a>
-    <?php endwhile;  endif; ?>
+    <?php
+      }  else {
+        $images = $right['db_images'];
+        foreach ( $images as $img ) {
+          echo '<a href="'. $img['db_link'] .'" title="'. $img['alt'] .'">';
+          echo '<img src="'. $img['db_image']['url'] .'" alt="'. $img['db_image']['alt'] .'"/>';
+          echo '</a>';
+        }
+      }
+    ?>
   </div>
 </aside>
