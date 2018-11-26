@@ -50,22 +50,63 @@ h1 {
     font-size: ms(12);
   }
 }
-p.has-medium-font-size {
-  margin-bottom: 1.5em;
+p {
+  font-size: ms(0);
   @include mq(medium) {
-    font-size: ms(5);
+    font-size: ms(1);
   }
   @include mq(large) {
-    font-size: ms(6);
+    font-size: ms(2);
+  }
+
+  &.has-medium-font-size {
+    margin-bottom: 1.5em;
+    @include mq(medium) {
+      font-size: ms(5);
+    }
+    @include mq(large) {
+      font-size: ms(6);
+    }
   }
 }
+
 .hero-title {
   @extend %super;
 }
 .entry-content {
-  ol, ul {
-    margin-left: 2em !important;
+  li {
+    margin-left: 2.5em !important;
     list-style-position: outside;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+  ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $denim; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  ol {
+    list-style: none;
+    counter-reset: li;
+    li {
+      counter-increment: li;
+      &:before {
+        content: counter(li);
+        color: $denim;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        text-align: right; 
+        direction: rtl
+      }
+    }
+  }
+
 }

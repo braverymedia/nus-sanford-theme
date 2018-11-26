@@ -1,5 +1,4 @@
 .nus-block-download-bar {
-  @extend %inner-bounds;
   background-color: #F3F3F4;
   margin: 25px !important;
   padding: 10px 20px;
@@ -11,16 +10,17 @@
       flex: 1 50%;
     }
     @include mq(large) {
-      flex: 1 50%;
-      margin-right: 20%; 
+      flex: 1 40%;
+      margin-right: 20%;
     }
   }
   .download-bar--action {
     @include mq(medium) {
-      flex: 1 50%;
+      flex: 1 auto;
+      max-width: 40%;
     }
     @include mq(large) {
-      flex: 0 1 auto;
+      flex: 1 auto;
     }
   }
   &.download-bar--button {
@@ -30,12 +30,16 @@
         text-transform: uppercase;
         display: block;
         width: 100%;
+        margin-top: 0;
       }
     }
   }
   @include mq(medium) {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    max-width: 1200px !important;
+    margin: 0 auto 35px !important;
+    padding: 25px 25px !important;
   }
 }
