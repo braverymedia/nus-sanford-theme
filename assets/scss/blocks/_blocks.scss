@@ -396,16 +396,8 @@
 			}
 
 			.has-primary-background-color {
-				// background-color: $color__link;
+				color: $white;
 			}
-
-			// &.alignfull {
-			//
-			// 	@include mq(medium) {
-			// 		padding-left: calc(10% + 58px + (2 * #{$size__spacing-unit}));
-			// 		padding-right: calc(10% + 58px + (2 * #{$size__spacing-unit}));
-			// 	}
-			// }
 		}
 	}
 
@@ -873,3 +865,36 @@
 	'download-bar',
 	'social-follow-bar',
 	'faq';
+
+/* Editor colors */
+.has-light-grey-background-color {
+     background-color: $light-grey;
+ }
+.has-light-grey-color {
+     background-color: $light-grey;
+}
+.has-pistachio-background-color {
+     background-color: $pistachio;
+}
+.has-pistachio-color {
+     color: $pistachio;
+}
+.has-denim-background-color {
+     background-color: $denim;
+}
+.has-denim-color {
+     color: $denim;
+}
+.has-orange-red-background-color {
+     background-color: $orange-red;
+}
+.has-orange-red-color {
+     color: $orange-red;
+}
+
+.has-medium-carmine-background-color {
+     background-color: $medium-carmine;
+}
+.has-medium-carmine-color {
+     color: $medium-carmine;
+}

@@ -2337,6 +2337,16 @@
 		"plM": 1790464483327,
 		"prP": 1
 		},
+	"/assets/js/acf-admin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/min/acf-admin.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/js/customizer-preview.js": {
 		"ft": 64,
 		"ma": 0,
@@ -2373,6 +2383,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/min/loop.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/assets/js/min/acf-admin.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/min/min/acf-admin.min.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

@@ -12,20 +12,38 @@
   width: 100%;
   font-weight: $weight__semibold;
   text-transform: uppercase;
-  min-height: 100vh;
   transition: all .3s ease-in-out;
+  @media ( max-width: 766px ) {
+    overflow: hidden;
+    min-height: 90vh;
+    ul {
+      font-size: ms(1);
+      &.menu {
+        position: absolute;
+        overflow: scroll;
+        height: 100%;
+        padding-bottom: 10vh;
+        padding-top: 25px;
+        width: 100%;
+      }
+      > li {
+        ul {
+          text-transform: none;
+          margin-left: 2em;
+        }
+      }
+    }
+    li {
+      text-align: left;
+    }
+  }
+
   ul {
     margin: 0 0;
     padding: 0 0;
-    > li {
-      ul {
-        display: none;
-      }
-    }
   }
   li {
     list-style: none;
-    text-align: center;
     a {
       display: block;
       padding: .5em;

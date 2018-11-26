@@ -51,5 +51,8 @@
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
+    @include mq(medium) {
+      margin-bottom: 10vw;
+    }
   }
 }

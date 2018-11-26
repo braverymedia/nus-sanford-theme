@@ -17,6 +17,7 @@ body {
     line-height: 1.667;
     font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: $ship-gray;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: $font__default-heading-stack;
@@ -73,7 +74,10 @@ p {
 }
 .entry-content {
   p {
-    font-size: ms(3);
+    font-size: ms(1);
+    @include mq(medium) {
+      font-size: ms(3);
+    }
   }
   h1 {
     font-size: ms(6);
@@ -89,6 +93,15 @@ p {
     margin-bottom: .75em;
     @include mq(medium){
       font-size: ms(4);
+    }
+  }
+  h3 {
+    font-size: ms(2);
+    font-weight: $weight__semibold;
+    margin-bottom: .75em;
+    @include mq(medium){
+      font-size: ms(3);
+      margin-top: 1.5em;
     }
   }
   li {

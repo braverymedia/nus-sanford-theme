@@ -110,3 +110,9 @@
   		include( STYLESHEETPATH . "/template-parts/blocks/block-acf-{$slug}.php" );
   	}
   }
+
+function nus_acf_enqueue_admin_script() {
+
+    wp_enqueue_script( 'nus-acf-admin', plugin_dir_url( __FILE__ ) . 'assets/js/min/acf-admin.min..js', array(), '1.0' );
+}
+add_action( 'admin_enqueue_scripts', 'nus_acf_enqueue_admin_script' );
