@@ -2024,6 +2024,40 @@
 		"oAP": "/assets/css/bravery-login.css.map",
 		"oF": 0
 		},
+	"/assets/css/nus-blocks-admin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/assets/css/min/nus-blocks-admin.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/nus-blocks-admin.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/css/nus-blocks-admin.css.map",
+		"oF": 0
+		},
+	"/assets/css/sanford.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/assets/css/min/sanford.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/sanford.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/css/sanford.css.map",
+		"oF": 0
+		},
 	"/assets/css/wp-base.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2339,6 +2373,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/min/loop.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/assets/js/min/aria.accordion.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/min/min/aria.accordion.min.min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -3417,6 +3461,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/blocks/_faq.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_faq.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/blocks/_recent-posts.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3742,6 +3799,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/nus-blocks-admin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/css/nus-blocks-admin.css",
+		"oF": 1,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/sanford.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3853,6 +3923,13 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/classes/class-nus-svg-icons.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/classes/class-nus-svg-icons.php",
+		"oF": 0
 		},
 	"/classes/class-nus-walker-comment.php": {
 		"cB": 0,

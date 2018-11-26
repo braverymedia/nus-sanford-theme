@@ -142,3 +142,84 @@
 		}
 	}
 }
+
+.wp-block-atomic-blocks-ab-testimonial {
+	background-color: transparent !important;
+	position: relative;
+	.entry-content & {
+		margin: 35px 25px;
+		@include mq(medium) {
+			padding: 0;
+			max-width: 900px;
+			margin: 35px auto;
+		}
+	}
+	.ab-testimonial-text p {
+		font-weight: $weight__semibold;
+		font-style: italic;
+		font-size: ms(1);
+	}
+	.ab-testimonial-info {
+		position: static;
+	}
+	.ab-testimonial-name {
+		color: $pistachio !important;
+		text-transform: uppercase;
+		font-size: 1.1em;
+	}
+	.ab-testimonial-title {
+		font-size: ms(0);
+		font-style: italic;
+	}
+	&.ab-has-avatar {
+		.ab-testimonial-name {
+			margin-left: 0 !important;
+		}
+		.ab-testimonial-title {
+			margin-left: 0 !important;
+		}
+		.ab-testimonial-avatar-wrap {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			.ab-testimonial-image-wrap {
+				display: flex;
+				background-color: $pistachio;
+				width: 150px;
+				height: 150px;
+				border-radius: 300px;
+				overflow: hidden;
+				img {
+					object-fit: cover;
+					object-position: center;
+					max-width: none;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.ab-testimonial-text {
+			padding-top: 175px;
+		}
+		@include mq(medium) {
+			margin: 55px auto;
+			.ab-testimonial-avatar-wrap {
+				left: 0;
+				top: 0;
+				transform: none;
+			}
+			.ab-testimonial-text,
+			.ab-testimonial-info {
+				padding-top: 0;
+				padding-left: 195px;
+			}
+		}
+		@include mq(large) {
+			.ab-testimonial-text,
+			.ab-testimonial-info {
+				font-size: 1.2em;
+			}
+		}
+	}
+}

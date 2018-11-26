@@ -52,6 +52,7 @@ h1 {
 }
 p {
   font-size: ms(0);
+  margin-bottom: .75em;
   @include mq(medium) {
     font-size: ms(1);
   }
@@ -62,18 +63,34 @@ p {
   &.has-medium-font-size {
     margin-bottom: 1.5em;
     @include mq(medium) {
-      font-size: ms(5);
-    }
-    @include mq(large) {
-      font-size: ms(6);
+      font-size: ms(3);
     }
   }
 }
 
-.hero-title {
+.hero-title, .page-title, .archive-title, .posts-page-title {
   @extend %super;
 }
 .entry-content {
+  p {
+    font-size: ms(3);
+  }
+  h1 {
+    font-size: ms(6);
+    margin-bottom: .75em;
+    @include mq(large) {
+      font-size: ms(9);
+    }
+  }
+  h2 {
+    color: $medium-carmine;
+    font-size: ms(2);
+    font-weight: $weight__semibold;
+    margin-bottom: .75em;
+    @include mq(medium){
+      font-size: ms(4);
+    }
+  }
   li {
     margin-left: 2.5em !important;
     list-style-position: outside;
@@ -103,7 +120,7 @@ p {
         width: 1em;
         margin-left: -1.5em;
         margin-right: 0.5em;
-        text-align: right; 
+        text-align: right;
         direction: rtl
       }
     }

@@ -183,7 +183,9 @@ function nus_scripts() {
 	wp_enqueue_script('modernizr', get_stylesheet_directory_uri() . '/assets/js/modernizr.min.js', false, '3.6', false);
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'nus-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'aria-accordion', get_template_directory_uri() . '/assets/js/min/aria.accordion.min.js', array(), '3.2.1', true );
 	wp_enqueue_style( 'nus-webfonts', $font_url, array(), null, 'screen' );
+	wp_enqueue_style( 'dashicons' );
 
 	// See if we're on dev or not
 	if ( SCRIPT_DEBUG || WP_DEBUG ) :
@@ -206,7 +208,7 @@ add_action( 'wp_enqueue_scripts', 'nus_scripts' );
  */
 function nus_editor_customizer_styles() {
 
-	wp_enqueue_style( 'nus-editor-customizer-styles', get_theme_file_uri( '/assets/css/style-editor-customizer.css' ), false, '1.0', 'all' );
+	wp_enqueue_style( 'nus-editor-customizer-styles', get_theme_file_uri( '/assets/css/nus-blocks-admin.css' ), false, '1.0', 'all' );
 
 	if ( 'custom' === get_theme_mod( 'colorscheme' ) ) {
 		// Include color patterns

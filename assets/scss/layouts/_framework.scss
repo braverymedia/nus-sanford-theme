@@ -1,8 +1,10 @@
 %inner-bounds {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 25px;
   @include mq(large) {
-    padding: 0 25px;
+    padding: 0 auto;
   }
 }
 
@@ -49,6 +51,29 @@ body {
   padding-bottom: 55px;
   @include mq(medium) {
     padding-bottom: 0;
+  }
+}
+.blog,
+.archive,
+.single {
+  .site-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 25px 45px;
+    @include mq(medium) {
+      display: grid !important;
+      grid-template-columns: 70% 25%;
+      grid-column-gap: 5%;
+    }
+  }
+}
+.gform_wrapper {
+  @extend %inner-bounds;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  li.gfield:before {
+    display: none;
   }
 }
 .page,

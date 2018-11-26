@@ -1,9 +1,11 @@
 .blog, .archive, .single {
   .type-post {
+    margin-bottom: 55px;
     .post-thumbnail {
       margin-top: 0;
     }
-    h3, h2 {
+    h2 {
+      @extend h3;
       color: $medium-carmine;
       > a {
         color: $medium-carmine;
