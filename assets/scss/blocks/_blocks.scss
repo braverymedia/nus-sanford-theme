@@ -817,6 +817,11 @@
 		margin-bottom: 25px;
 	}
 }
+.ab-container-content {
+	@include mq(large) {
+		max-width: 1200px !important;
+	}
+}
 .ab-container-image-wrap {
 	.ab-container-image {
 		object-position: bottom center;
