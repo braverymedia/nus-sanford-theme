@@ -92,6 +92,22 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5bfb65462abde",
+                    "label": "FB Manual Post",
+                    "name": "fb_manual_post",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
                 }
             ]
         },
@@ -147,6 +163,22 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5bfb65722abdf",
+                    "label": "Twitter Manual Post",
+                    "name": "tw_manual_post",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
                 }
             ]
         },
@@ -202,6 +234,22 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_5bfb65902abe0",
+                    "label": "IG Manual Post",
+                    "name": "ig_manual_post",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
                 }
             ]
         }
@@ -223,5 +271,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1543109597
+    "modified": 1543202217
 }

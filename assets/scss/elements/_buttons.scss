@@ -5,12 +5,14 @@ input[type="submit"],
 .wp-block-button__link {
 	border: 1px solid;
 	border-radius: 25px !important;
-	color: $white;;
+	color: $white;
 	font-size: ms(0);
 	line-height: 1;
 	padding: .6em 1em .4em;
 	margin-top: 15px;
-	width: 50%;
+	@include mq(medium) {
+		width: 50%;
+	}
 	&.has-primary-background-color {
 		background-color: $denim;
 		&:hover {

@@ -51,6 +51,7 @@ h1 {
   }
 }
 p.has-medium-font-size {
+  margin-bottom: 1.5em;
   @include mq(medium) {
     font-size: ms(5);
   }

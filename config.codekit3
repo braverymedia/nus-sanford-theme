@@ -3447,6 +3447,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/blocks/_social-follow-bar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_social-follow-bar.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/blocks/_testimonials.scss": {
 		"aP": 1,
 		"bl": 0,

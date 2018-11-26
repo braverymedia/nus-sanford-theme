@@ -1,13 +1,18 @@
 // Grid layouts
 .has-1 {
-	grid-template-columns: 1fr;
+	@include mq(medium) {
+		grid-template-columns: 50%;
+	}
 }
 .has-2 {
-	grid-template-columns: 1fr 1fr;
+	@include mq(medium) {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 .has-3 {
-	grid-template-columns: 1fr 1fr 1fr;
+
 	@include mq(medium) {
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 4%;
 	}
 }
@@ -52,6 +57,7 @@
 	padding-top: 0;
 	.wp-block--inner {
 		align-content: stretch;
+		grid-row-gap: 35px;
 		@include mq(medium) {
       font-size: ms(2);
 			padding-left: 0 !important;
@@ -69,7 +75,6 @@
   transition: all .3s ease-in-out;
 	@include mq(medium) {
 		margin-top: 0;
-		margin-bottom: 35px;
 	}
 	&:first-child {
 		margin-top: 0;

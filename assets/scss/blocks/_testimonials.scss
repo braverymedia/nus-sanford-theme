@@ -11,11 +11,6 @@
 		display: flex;
 		align-items: stretch;
 		justify-content: center;
-		.testimonial--inner {
-			display: grid;
-			align-content: center;
-			justify-content: center;
-		}
 		&--image {
 			background-color: $gunsmoke;
 			display: flex;
@@ -25,7 +20,7 @@
 			border: 5px solid;
 			overflow: hidden;
 			border-radius: 50%;
-			margin: 0 0;
+			margin: 0 auto;
 			justify-self: center;
 			> img {
 				max-width: none;
@@ -64,6 +59,9 @@
 			overflow: hidden;
 			.testimonial--inner {
 				width: 85vw;
+				display: grid;
+				justify-content: space-between;
+				align-content: center;
 			}
 			&.has-quote .testimonial--inner {
 				grid-template: "testimonial-image testimonial-content";
@@ -103,10 +101,16 @@
 		text-align: center;
 		margin-top: 10px;
 		align-self: center;
+		.svg-icon {
+			display: none;
+		}
 		@include mq(medium) {
 			text-align: left;
 		}
     @include mq(large) {
+			.svg-icon {
+				display: block;
+			}
       width: 600px;
 			font-size: ms(3);
     }
