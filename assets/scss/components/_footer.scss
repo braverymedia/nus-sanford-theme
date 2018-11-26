@@ -40,6 +40,9 @@
         }
         &.footer-links-menu li {
           margin-right: 5px;
+          @include mq(large) {
+            margin-right: 10px;
+          }
         }
         &.social-links-menu {
           text-align: right;
@@ -69,6 +72,9 @@
 }
 body:not(.home) {
   .site-footer {
-    margin-top: 55px;
+    margin-top: 25px;
+    @include mq(medium) {
+      margin-top: 55px;
+    }
   }
 }
