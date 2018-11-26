@@ -60,7 +60,7 @@
 		grid-row-gap: 35px;
 	}
 	@include mq(medium) {
-		padding: 25px 0;
+		padding: 15px 0;
 		.wp-block--inner {
 			font-size: ms(2);
 			padding-left: 0 !important;
@@ -81,6 +81,9 @@
 	@include mq(medium) {
 		margin-top: 0;
 	}
+	@include mq(large) {
+		height: 380px;
+	}
 	&:first-child {
 		margin-top: 0;
 	}
@@ -88,7 +91,7 @@
 		background-color: $red-robin;
 	}
 	&--inner {
-		padding: 30px 20px;
+		padding: 20px 20px;
     color: $white !important;
     text-decoration: none;
     display: block;
@@ -113,7 +116,8 @@
     }
 		@include mq(large) {
 			p {
-				min-height: 165px;
+				min-height: 125px;
+				font-size: ms(1);
 			}
 		}
 	}

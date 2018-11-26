@@ -39,6 +39,21 @@ body {
   @include mq(medium) {
     max-width: 1200px;
     display: grid;
+    justify-content: center;
+  }
+  body.home & {
+    padding: 0;
+    @include mq(medium) {
+      max-width: none;
+    }
+    .entry-content {
+      > p:first-child {
+        padding: 35px 25px 45px;
+        max-width: 900px;
+        justify-self: center;
+        margin: auto;
+      }
+    }
   }
   body:not(.home).has-sidebar &,
   body.blog &,

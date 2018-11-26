@@ -111,6 +111,7 @@ p {
   }
   ul {
     list-style: none; /* Remove default bullets */
+    margin-bottom: 1.5em;
   }
 
   ul li::before {
@@ -124,6 +125,7 @@ p {
   ol {
     list-style: none;
     counter-reset: li;
+    margin-bottom: 1.5em;
     li {
       counter-increment: li;
       &:before {
