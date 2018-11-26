@@ -40,6 +40,7 @@
   .contact {
     display: none;
     @include mq(medium) {
+      height: 40px;
       display: flex;
       align-items: center;
       h2 {
@@ -69,6 +70,7 @@
     flex: 1;
     align-items: stretch;
     display: flex;
+    height: 40px;
     ul {
       display: flex;
       flex: 1;

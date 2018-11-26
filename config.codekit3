@@ -2024,23 +2024,6 @@
 		"oAP": "/assets/css/bravery-login.css.map",
 		"oF": 0
 		},
-	"/assets/css/sanford.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/assets/css/min/sanford.min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/css/sanford.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/assets/css/sanford.css.map",
-		"oF": 0
-		},
 	"/assets/css/wp-base.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3870,13 +3853,6 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
-		},
-	"/classes/class-nus-svg-icons.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/classes/class-nus-svg-icons.php",
-		"oF": 0
 		},
 	"/classes/class-nus-walker-comment.php": {
 		"cB": 0,
