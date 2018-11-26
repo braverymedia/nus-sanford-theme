@@ -18,7 +18,7 @@
                 <?php echo nus_get_icon_svg( $icon, 85 ); ?>
               </figure>
               <?php echo $content; ?>
-              <div class="nus-block-chiclet--action">Read More</div>
+              <div class="nus-block-chiclet--action">Read More <?php echo nus_get_icon_svg('right-arrow', '14px'); ?></div>
             </a>
           <?php else : ?>
             <div class="nus-block-chiclet--inner">

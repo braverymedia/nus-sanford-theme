@@ -1,0 +1,64 @@
+.nus-block-chiclet-grid {
+	.wp-block--inner {
+		@include mq(medium) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 4%;
+      font-size: ms(2);
+		}
+	}
+}
+
+// Chiclet styles
+.nus-block-chiclet {
+	background-color: $medium-carmine;
+	border-radius: 30px 0;
+	margin-top: 35px;
+	text-align: center;
+  transition: all .3s ease-in-out;
+	&:hover {
+		background-color: $red-robin;
+	}
+	&--inner {
+		padding: 30px 20px;
+    color: $white !important;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    figure.nus-block-chiclet-icon {
+      transition: all .3s ease-in-out;
+      .svg-icon {
+        transition: all .3s ease-in-out;
+      }
+    }
+    &:hover {
+      color: $white !important;
+      text-decoration: none;
+      figure.nus-block-chiclet-icon {
+        transition: all .3s ease-in-out;
+        margin: .25em 0;
+        .svg-icon {
+          transition: all .3s ease-in-out;
+          height: 59px;
+        }
+      }
+    }
+	}
+	h3 {
+		font-size: ms(3);
+		margin-bottom: 35px;
+	}
+  &--action {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transform: translateY(25px);
+    .svg-icon {
+      margin-left: 5px;
+      transform: translateY(2px);
+    }
+  }
+}

@@ -87,6 +87,9 @@
             transition: opacity .3s ease-in-out;
           }
         }
+        &.current-menu-item:after {
+          opacity: 1;
+        }
         > ul {
           display: block;
           position: absolute;
@@ -132,11 +135,13 @@
         text-align: left;
       }
     }
-
   }
-}
-@include mq(xlarge) {
-  font-size: ms(1);
+  @include mq(large) {
+    font-size: ms(1);
+  }
+  @include mq(xlarge) {
+    font-size: ms(2);
+  }
 }
 button.menu-toggle {
   grid-area: menu-toggle;

@@ -3408,6 +3408,45 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/blocks/_chiclets.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_chiclets.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/blocks/_recent-posts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_recent-posts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/blocks/_testimonials.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_testimonials.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/bravery-login.scss": {
 		"aP": 1,
 		"bl": 0,

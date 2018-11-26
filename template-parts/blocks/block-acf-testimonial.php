@@ -29,6 +29,7 @@
             </div>
           <?php } else { ?>
             <blockquote>
+              <?php echo nus_get_icon_svg('quote', '50px'); ?>
               <?php echo $quote['quotation']; ?>
               <footer>
                 <cite><?php echo $quote['citation']; ?></cite>

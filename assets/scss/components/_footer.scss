@@ -57,4 +57,10 @@
       font-size: ms(-2);
     }
   }
+  @include mq(medium) {
+    font-size: ms(0);
+  }
+  @include mq(large) {
+    font-size: ms(1);
+  }
 }

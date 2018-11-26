@@ -39,7 +39,7 @@
 		if ( is_singular() && !is_single() && !is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>
 		<div class="page-cover-image">
 			<?php nus_post_thumbnail(); ?>
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php the_title( '<div class="hero-title">', '</div>' ); ?>
 		</div>
 	<?php
 		elseif ( is_front_page() && nus_can_show_post_thumbnail() && has_post_thumbnail() ) : ?>

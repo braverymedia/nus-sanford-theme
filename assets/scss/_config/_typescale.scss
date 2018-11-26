@@ -1,7 +1,7 @@
 
 // Modular Scale Config
 $modularscale: (
-    base: .889em,
+    base: .889rem,
     ratio: $major-second,
     767px: (
       base: 1.125rem,
@@ -36,6 +36,9 @@ h3 {
 h2 {
   font-size: ms(5); // 24px
   font-weight: $weight__book;
+  @include mq(large) {
+    font-size: ms(8);
+  }
 }
 h1 {
   font-size: ms(8); // 46px
@@ -46,4 +49,15 @@ h1 {
   @include mq(medium){
     font-size: ms(12);
   }
+}
+p.has-medium-font-size {
+  @include mq(medium) {
+    font-size: ms(5);
+  }
+  @include mq(large) {
+    font-size: ms(6);
+  }
+}
+.hero-title {
+  @extend %super;
 }

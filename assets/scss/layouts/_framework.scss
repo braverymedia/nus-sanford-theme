@@ -32,8 +32,8 @@ body {
   }
 }
 .site-main {
-  @extend %inner-bounds;
   body:not(.home) & {
+    @extend %inner-bounds;
     @include mq(medium) {
       display: grid;
       grid-template-columns: 70% 25%;
@@ -43,4 +43,7 @@ body {
 }
 .site-content {
   padding-bottom: 55px;
+  @include mq(medium) {
+    padding-bottom: 0;
+  }
 }
