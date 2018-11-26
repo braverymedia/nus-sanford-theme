@@ -15,9 +15,8 @@
       single_post_title( '<h1 class="page-title archive-title posts-page-title">', '</h1>' );
     elseif ( is_single() ) :
       echo '<h2 class="posts-page-title">' . get_the_title( get_option('page_for_posts', true) ) . '</h2>';
-    elseif ( is_page() && !is_front_page() ) {
+    elseif ( is_page() && !is_front_page() ) :
       the_title( '<div class="hero-title">', '</div>' );
-    }
     endif;
   ?>
 </header><!-- .page-header -->
