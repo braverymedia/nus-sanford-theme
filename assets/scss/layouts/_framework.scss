@@ -34,16 +34,15 @@ body {
   }
 }
 .site-main {
-  body:not(.home) & {
+  body:not(.home).has-sidebar &,
+  body.blog & {
+    margin: 0 auto;
+    padding: 15px 25px 45px;
     @include mq(medium) {
+      max-width: 1200px;
       display: grid;
       grid-template-columns: 70% 25%;
       grid-column-gap: 5%;
-    }
-  }
-  body.no-sidebar & {
-    @include mq(medium) {
-      display: block;
     }
   }
 }
@@ -51,20 +50,6 @@ body {
   padding-bottom: 55px;
   @include mq(medium) {
     padding-bottom: 0;
-  }
-}
-.blog,
-.archive,
-.single {
-  .site-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 25px 45px;
-    @include mq(medium) {
-      display: grid !important;
-      grid-template-columns: 70% 25%;
-      grid-column-gap: 5%;
-    }
   }
 }
 .post-type-archive-tribe_events {

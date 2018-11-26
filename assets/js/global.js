@@ -8,7 +8,6 @@ new SVGInjector().inject(document.querySelectorAll('img[src$=".svg"]'));
   // Tooling for color + shadow effect
   function detectScrollDistance() {
     var scrollDistance = $(window).scrollTop();
-    console.log(scrollDistance);
     if ( scrollDistance >= 4 ) {
       $('body').addClass('scrolling');
     } else {
