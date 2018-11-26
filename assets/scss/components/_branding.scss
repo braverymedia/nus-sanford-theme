@@ -17,17 +17,28 @@
     color: $white;
     fill: $white;
     width: 120px;
-    height: 46px;
+    height: 55px;
     transition: fill .2s ease-in-out;
     @include mq(medium) {
-      width: 181px;
-      height: 50px;
+      width: 139px;
+      height: 65px;
     }
   }
-  .scrolling &, body:not(.home) & {
+  .scrolling &, body:not(.home) &, body.menu-open & {
     .custom-logo {
-      color: $pistachio;
-      fill: $pistachio;
+      .medium-grey {
+        color: $logo-med-grey;
+        fill: $logo-med-grey;
+      }
+      .pistachio {
+        color: $pistachio;
+        fill: $pistachio;
+      }
+      .lighter-grey {
+        color: $logo-lighter-grey;
+        fill: $logo-lighter-grey;
+      }
+
       transition-delay: .1s;
       transition: fill .2s ease-in-out;
     }

@@ -1,6 +1,6 @@
 <div class="site-branding">
   <?php if ( has_custom_logo() ) : ?>
-    <div class="site-logo"><?php echo nus_get_icon_svg('sanford-logo', '180px' ); ?></div>
+    <div class="site-logo"><?php the_custom_logo(); ?></div>
   <?php endif; ?>
   <?php $blog_info = get_bloginfo( 'name' ); ?>
   <?php if ( ! empty( $blog_info ) ) : ?>

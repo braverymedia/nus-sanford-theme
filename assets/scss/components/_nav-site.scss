@@ -22,8 +22,7 @@
         position: absolute;
         overflow: scroll;
         height: 100%;
-        padding-bottom: 10vh;
-        padding-top: 25px;
+        padding: 25px 25px 10vh;
         width: 100%;
       }
       > li {
@@ -186,7 +185,7 @@ button.menu-toggle {
     display: none;
   }
 }
-.scrolling, body:not(.home) {
+.scrolling, body:not(.home),  body.menu-open {
   button.menu-toggle {
     color: $black !important;
     transition: color .2s ease-in-out;
