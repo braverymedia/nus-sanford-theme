@@ -1,6 +1,7 @@
 .widget {
   padding: 15px;
   .widget-title {
+    @extend h3;
     color: $medium-carmine;
     padding-bottom: 10px;
     margin-bottom: 10px;

@@ -6,7 +6,7 @@
   <div data-aria-accordion>
     <?php while ( have_rows('accordion') ) : the_row('accordion'); ?>
       <h3 data-aria-accordion-heading>
-        <?php the_sub_field('accordion_title'); ?>
+        <?php the_sub_field('accordion_title'); ?> <?php echo nus_get_icon_svg('chevron-right', '20px'); ?>
       </h3>
       <div data-aria-accordion-panel>
         <?php the_sub_field('accordion_content'); ?>

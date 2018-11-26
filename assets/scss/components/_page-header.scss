@@ -2,7 +2,7 @@
   background-color: $denim;
   color: $white;
   padding: 20px 25px;
-  .hero-title {
+  .hero-title, .archive-title, .page-title, .posts-page-title {
     position: relative;
     z-index: 10;
     @extend %inner-bounds;
