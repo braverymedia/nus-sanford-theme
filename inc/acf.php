@@ -113,6 +113,6 @@
 
 function nus_acf_enqueue_admin_script() {
 
-    wp_enqueue_script( 'nus-acf-admin', plugin_dir_url( __FILE__ ) . 'assets/js/min/acf-admin.min..js', array(), '1.0' );
+    wp_enqueue_script( 'nus-acf-admin', get_template_directory_uri() . '/assets/js/min/acf-admin.min..js', array(), '1.0', true );
 }
 add_action( 'admin_enqueue_scripts', 'nus_acf_enqueue_admin_script' );
