@@ -25,6 +25,10 @@ function nus_body_classes( $classes ) {
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
 	}
+	// Adds a class of has-sidebar when there is a sidebar present.
+	if ( is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'has-sidebar';
+	}
 
 	// Adds a class if image filters are enabled.
 	if ( nus_image_filters_enabled() ) {

@@ -2417,6 +2417,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/assets/js/min/flickity.pkgd.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/min/min/flickity.pkgd.min.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/js/min/global.min.js": {
 		"ft": 64,
 		"ma": 0,

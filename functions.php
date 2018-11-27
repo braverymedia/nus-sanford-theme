@@ -218,6 +218,7 @@ function nus_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'nus-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'aria-accordion', get_template_directory_uri() . '/assets/js/min/aria.accordion.min.js', array(), '3.2.1', true );
+	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/assets/js/min/flickity.pkgd.min.js', array(), '2.1.2', true );
 	wp_enqueue_style( 'nus-webfonts', $font_url, array(), null, 'screen' );
 	wp_enqueue_style( 'dashicons' );
 
