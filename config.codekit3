@@ -163,6 +163,14 @@
 		"oAP": "/assets/bower_components/animate.css/LICENSE",
 		"oF": 0
 		},
+	"/assets/bower_components/animate.css/package-lock.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/assets/bower_components/animate.css/package-lock.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/bower_components/animate.css/package.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -208,6 +216,16 @@
 		"ma": 1,
 		"oA": 2,
 		"oAP": "/assets/bower_components/animate.css/source/attention_seekers/headShake.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/bower_components/animate.css/source/attention_seekers/heartBeat.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 2,
+		"oAP": "/assets/bower_components/animate.css/source/attention_seekers/heartBeat.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -818,6 +836,16 @@
 		"ma": 1,
 		"oA": 2,
 		"oAP": "/assets/bower_components/animate.css/source/specials/hinge.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/bower_components/animate.css/source/specials/jackInTheBox.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 2,
+		"oAP": "/assets/bower_components/animate.css/source/specials/jackInTheBox.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1660,6 +1688,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/assets/bower_components/modular-scale/libsass/package-lock.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/assets/bower_components/modular-scale/libsass/package-lock.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/bower_components/modular-scale/libsass/package.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -1747,13 +1783,6 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
-		},
-	"/assets/bower_components/modular-scale/stylesheets/modularscale.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/assets/bower_components/modular-scale/stylesheets/modularscale.zip",
-		"oF": 0
 		},
 	"/assets/bower_components/modular-scale/stylesheets/modularscale/_function.scss": {
 		"aP": 1,

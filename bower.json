@@ -35,7 +35,7 @@
   "devDependencies": {
     "svg-injector-2": "^2.1.3",
     "animejs": "^2.2.0",
-    "modular-scale": "^3.0.5",
+    "modular-scale": "^3.0.9",
     "animate.css": "^3.5.2"
   }
 }
