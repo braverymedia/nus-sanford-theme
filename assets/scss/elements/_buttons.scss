@@ -19,6 +19,9 @@ a.wp-block-button__link,
 	@include mq(medium) {
 		width: 50%;
 	}
+	@include mq(large) {
+		width: 200px;
+	}
 	&.has-primary-background-color,
 	&.gform_button {
 		background-color: $denim;
