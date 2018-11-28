@@ -651,6 +651,7 @@
 		}
 	}
 	.wp-block-embed__wrapper {
+		max-width: 800px;
 		iframe {
 			position: absolute;
 			left: 0;
