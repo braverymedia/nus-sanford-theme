@@ -3780,6 +3780,23 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/css/tribe-events.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/assets/scss/css/min/tribe-events.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/scss/css/tribe-events.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/scss/css/tribe-events.css.map",
+		"oF": 0
+		},
 	"/assets/scss/elements/_buttons.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3893,6 +3910,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/assets/scss/css/_single.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/layouts/tribe-events.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/tribe-events.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4379,6 +4409,13 @@
 		"oAP": "/template-parts/content/content-excerpt.php",
 		"oF": 0
 		},
+	"/template-parts/content/content-list-event.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/content/content-list-event.php",
+		"oF": 0
+		},
 	"/template-parts/content/content-none.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -4405,6 +4442,125 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/template-parts/content/content.php",
+		"oF": 0
+		},
+	"/tribe-events/default-template.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/default-template.php",
+		"oF": 0
+		},
+	"/tribe-events/list.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list.php",
+		"oF": 0
+		},
+	"/tribe-events/list/content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list/content.php",
+		"oF": 0
+		},
+	"/tribe-events/list/loop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list/loop.php",
+		"oF": 0
+		},
+	"/tribe-events/list/nav.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list/nav.php",
+		"oF": 0
+		},
+	"/tribe-events/list/single-event.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list/single-event.php",
+		"oF": 0
+		},
+	"/tribe-events/list/single-featured.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list/single-featured.php",
+		"oF": 0
+		},
+	"/tribe-events/list/title-bar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/list/title-bar.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/address.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/address.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/bar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/bar.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/map-basic.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/map-basic.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/map.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/map.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/details.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/details.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/map.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/map.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/organizer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/organizer.php",
+		"oF": 0
+		},
+	"/tribe-events/modules/meta/venue.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/tribe-events/modules/meta/venue.php",
 		"oF": 0
 		},
 	"/tribe-events/single-event.php": {

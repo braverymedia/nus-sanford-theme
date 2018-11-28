@@ -19,10 +19,13 @@ do_action( 'tribe_events_before_template' );
 ?>
 
 <!-- Title Bar -->
-<?php tribe_get_template_part( 'list/title-bar' ); ?>
-
-	<!-- Tribe Bar -->
-<?php tribe_get_template_part( 'modules/bar' ); ?>
+<?php
+	/**
+	  * Remove title & Tribe Bar for Sanford styles
+	  * tribe_get_template_part( 'list/title-bar' );
+		* tribe_get_template_part( 'modules/bar' );
+		*/
+?>
 
 	<!-- Main Events Content -->
 <?php tribe_get_template_part( 'list/content' ); ?>

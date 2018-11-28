@@ -53,12 +53,12 @@ function nus_login_logo_url() {
 add_filter('login_headerurl', 'nus_login_logo_url');
 
 function nus_login_logo_tooltip() {
-	return 'Site by NUS Media';
+	return 'Site by Bravery Media';
 }
 
 // customize admin footer text
 function nus_admin_footer() {
-	echo '<a href="http://braverymedia.co/?ref=ctheme" title="Built with NUS" target="_blank">Built with NUS.</a>';
+	echo '<a href="http://braverymedia.co/?ref=ctheme" title="Built with Bravery" target="_blank">Built with Bravery.</a>';
 }
 add_filter('admin_footer_text', 'nus_admin_footer');
 
