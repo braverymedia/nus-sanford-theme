@@ -1,6 +1,5 @@
 <div class="entry-meta">
   <?php
-    nus_posted_by();
     nus_posted_on();
     nus_first_category_link();
 
