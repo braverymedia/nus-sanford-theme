@@ -31,7 +31,7 @@ h4 {
 h3 {
   font-size: ms(2); // 24px
   font-weight: $weight__semibold;
-  margin-bottom: 1.171em;
+  margin-top: 1.171em;
   @include mq(medium) {
     font-size: ms(3); // 24px
   }
@@ -42,6 +42,7 @@ h3 {
 h2 {
   font-size: ms(5); // 46px
   font-weight: $weight__book;
+  margin-top: .925em;
   margin-bottom: .925em;
   @include mq(large) {
     font-size: ms(8);
