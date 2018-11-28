@@ -191,12 +191,6 @@
 			outline: none;
 			color: white;
 			outline: none;
-			@include mq(medium) {
-				width: 50%;
-			}
-			@include mq(large) {
-				width: 200px;
-			}
 			&:hover {
 				cursor: pointer;
 			}
