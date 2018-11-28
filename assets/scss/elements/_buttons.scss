@@ -15,13 +15,26 @@ a.wp-block-button__link,
 	font-weight: $weight__bold;
 	width: 100%;
 	text-decoration: none !important;
+	transition: all .3s ease-in-out;
 	@include mq(medium) {
 		width: 50%;
 	}
 	@include mq(large) {
-		width: 200px;
+		width: 300px;
 	}
-	&.has-primary-background-color,
+	&.has-medium-carmine-background-color {
+		background-color: $medium-carmine;
+		&:hover {
+			background-color: $red-robin;
+		}
+	}
+	&.has-orange-red-background-color {
+		background-color: $orange-red;
+		&:hover {
+			background-color: $red-robin;
+		}
+	}
+	&.has-denim-background-color,
 	&.gform_button {
 		background-color: $denim;
 		&:hover {
