@@ -49,9 +49,6 @@ function nus_infinite_scroll_render() {
 		the_post();
 		if ( is_search() ) :
 			get_template_part( 'template-parts/content/content', 'search' );
-		// Events Calendar Check
-		elseif ( tribe_is_past() || tribe_is_upcoming() && !is_tax() ) :
-			get_template_part( 'template-parts/content/content', 'single-event' );
 		else :
 			get_template_part( 'template-parts/content/content', 'excerpt' );
 		endif;
