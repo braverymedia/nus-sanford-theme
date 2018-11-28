@@ -819,11 +819,12 @@
 }
 // Atomic Blocks container
 .ab-block-container {
-	h2 {
-		margin-bottom: 25px;
-	}
 }
 .ab-container-content {
+	> .wp-block-atomic-blocks-ab-testimonial {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	@include mq(large) {
 		max-width: 1200px !important;
 	}
