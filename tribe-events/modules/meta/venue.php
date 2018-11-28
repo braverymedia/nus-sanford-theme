@@ -19,10 +19,9 @@ $website = tribe_get_venue_website_link();
 ?>
 
 <div class="tribe-events-meta-group tribe-events-meta-group-venue">
-	<h2 class="tribe-events-single-section-title"> <?php esc_html_e( tribe_get_venue_label_singular(), 'the-events-calendar' ) ?> </h2>
 	<dl>
 		<?php do_action( 'tribe_events_single_meta_venue_section_start' ) ?>
-
+		<dt><?php esc_html_e( __('Location'), 'the-events-calendar' ) ?></dt>
 		<dd class="tribe-venue"> <?php echo tribe_get_venue() ?> </dd>
 
 		<?php if ( tribe_address_exists() ) : ?>

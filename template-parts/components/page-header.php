@@ -18,7 +18,7 @@
       echo '<h1 class="hero-title events-title">' . __('Events', 'nus') . '</h1>';
 
     // Other single posts
-    elseif ( is_single() && ! tribe_is_event() ) :
+    elseif ( !tribe_is_event() && is_single() ) :
       echo '<div class="hero-title page-title">' . __('Harmony Headlines', 'nus') . '</div>';
 
     elseif ( is_archive() && ! is_home() ) :

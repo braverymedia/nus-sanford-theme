@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 ?>
-<main id="tribe-events-pg-template" class="tribe-events-pg-template">
+<main id="tribe-events-pg-template" class="tribe-events-pg-template site-main">
 	<?php tribe_events_before_html(); ?>
 	<?php tribe_get_view(); ?>
 	<?php tribe_events_after_html(); ?>

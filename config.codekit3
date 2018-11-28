@@ -3780,23 +3780,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/css/tribe-events.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/assets/scss/css/min/tribe-events.min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/scss/css/tribe-events.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/assets/scss/css/tribe-events.css.map",
-		"oF": 0
-		},
 	"/assets/scss/elements/_buttons.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3914,7 +3897,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/layouts/tribe-events.scss": {
+	"/assets/scss/layouts/_tribe-events.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -3922,7 +3905,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/assets/scss/css/tribe-events.css",
+		"oAP": "/assets/scss/css/_tribe-events.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

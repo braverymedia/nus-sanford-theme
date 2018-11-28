@@ -14,7 +14,7 @@ $time_format = get_option( 'time_format', Tribe__Date_Utils::TIMEFORMAT );
 $time_range_separator = tribe_get_option( 'timeRangeSeparator', ' - ' );
 
 $start_datetime = tribe_get_start_date();
-$start_date = tribe_get_start_date( null, false );
+$start_date = tribe_get_start_date( null, false, 'l, M. j, Y');;
 $start_time = tribe_get_start_date( null, false, $time_format );
 $start_ts = tribe_get_start_date( null, false, Tribe__Date_Utils::DBDATEFORMAT );
 
@@ -53,7 +53,7 @@ $website = tribe_get_event_website_link();
 ?>
 
 <div class="tribe-events-meta-group tribe-events-meta-group-details">
-	<h2 class="tribe-events-single-section-title"> <?php esc_html_e( 'Details', 'the-events-calendar' ) ?> </h2>
+	<h4 class="tribe-events-single-section-title"> <?php esc_html_e( 'Event Details', 'the-events-calendar' ) ?> </h4>
 	<dl>
 
 		<?php
@@ -78,7 +78,7 @@ $website = tribe_get_event_website_link();
 		elseif ( tribe_event_is_all_day() ):
 			?>
 
-			<dt class="tribe-events-start-date-label"> <?php esc_html_e( 'Date:', 'the-events-calendar' ) ?> </dt>
+			<dt class="tribe-events-start-date-label"> <?php esc_html_e( 'Date & Time:', 'the-events-calendar' ) ?> </dt>
 			<dd>
 				<abbr class="tribe-events-abbr tribe-events-start-date published dtstart" title="<?php esc_attr_e( $start_ts ) ?>"> <?php esc_html_e( $start_date ) ?> </abbr>
 			</dd>
@@ -103,7 +103,7 @@ $website = tribe_get_event_website_link();
 		else :
 			?>
 
-			<dt class="tribe-events-start-date-label"> <?php esc_html_e( 'Date:', 'the-events-calendar' ) ?> </dt>
+			<dt class="tribe-events-start-date-label"> <?php esc_html_e( 'Date & Time:', 'the-events-calendar' ) ?> </dt>
 			<dd>
 				<abbr class="tribe-events-abbr tribe-events-start-date published dtstart" title="<?php esc_attr_e( $start_ts ) ?>"> <?php esc_html_e( $start_date ) ?> </abbr>
 			</dd>
@@ -124,23 +124,6 @@ $website = tribe_get_event_website_link();
 			<dt class="tribe-events-event-cost-label"> <?php esc_html_e( 'Cost:', 'the-events-calendar' ) ?> </dt>
 			<dd class="tribe-events-event-cost"> <?php esc_html_e( $cost ); ?> </dd>
 		<?php endif ?>
-
-		<?php
-		echo tribe_get_event_categories(
-			get_the_id(), array(
-				'before'       => '',
-				'sep'          => ', ',
-				'after'        => '',
-				'label'        => null, // An appropriate plural/singular label will be provided
-				'label_before' => '<dt class="tribe-events-event-categories-label">',
-				'label_after'  => '</dt>',
-				'wrap_before'  => '<dd class="tribe-events-event-categories">',
-				'wrap_after'   => '</dd>',
-			)
-		);
-		?>
-
-		<?php echo tribe_meta_event_tags( sprintf( esc_html__( '%s Tags:', 'the-events-calendar' ), tribe_get_event_label_singular() ), ', ', false ) ?>
 
 		<?php
 		// Event Website

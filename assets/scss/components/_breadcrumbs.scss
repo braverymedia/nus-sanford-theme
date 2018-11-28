@@ -2,6 +2,10 @@
   background-color: $white;
   border-bottom: 1px solid $seashell;
   z-index: 100;
+  padding: 0 25px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   @include mq(medium) {
     position: sticky;
     top: 145px;
@@ -48,7 +52,6 @@
       color: $black;
     }
   }
-  margin-bottom: 35px;
   @include mq(medium) {
     margin-bottom: 0;
   }

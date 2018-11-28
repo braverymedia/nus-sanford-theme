@@ -27,7 +27,7 @@ $organizer = tribe_get_organizer();
 
 ?>
 <!-- Featured Image -->
-<?php echo tribe_event_featured_image( null, 'medium' ); ?>
+<?php echo tribe_event_featured_image( null, 'full' ); ?>
 <!-- Event Meta -->
 <div class="tribe-events-event-meta">
 	<div class="author">

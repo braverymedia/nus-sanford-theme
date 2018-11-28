@@ -37,6 +37,9 @@ body {
   margin: 0 auto;
   padding: 15px 25px 45px;
   @include mq(medium) {
+    padding: 15px 25px 45px;
+  }
+  @include mq(large) {
     padding: 15px 0 45px;
   }
   body.home & {
@@ -62,6 +65,9 @@ body {
     @include mq(medium) {
       grid-template-columns: 70% 25%;
       grid-column-gap: 5%;
+    }
+    @include mq(large) {
+      padding: 15px 0 45px;
     }
   }
 }
@@ -94,7 +100,6 @@ body {
 .archive {
   .site-main {
     .entry-content {
-
       > p,
       > h1,
       > h2,
