@@ -22,5 +22,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php endif; ?>
 </article><!-- #post-## -->
