@@ -1,10 +1,18 @@
 .page-header, .page-cover-image {
   background-color: $denim;
   color: $white;
-  padding: 20px 0;
+  padding: 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(medium) {
+    padding: 50px 25px;
+  }
   .hero-title, .archive-title, .page-title, .posts-page-title {
     position: relative;
     z-index: 10;
-    @extend %inner-bounds;
+    width: 100%;
+    max-width: 1200px;
+    line-height: 1.2;
   }
 }

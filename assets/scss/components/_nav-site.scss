@@ -17,7 +17,7 @@
     overflow: hidden;
     min-height: 90vh;
     ul {
-      font-size: ms(1);
+      font-size: ms(0);
       &.menu {
         position: absolute;
         overflow: scroll;
@@ -161,12 +161,6 @@
         text-align: left;
       }
     }
-  }
-  @include mq(large) {
-    font-size: ms(1);
-  }
-  @include mq(xlarge) {
-    font-size: ms(2);
   }
 }
 button.menu-toggle {

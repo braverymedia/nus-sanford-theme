@@ -11,15 +11,15 @@
   <?php
     // Single Event
     if ( tribe_is_event() && is_single()  ) :
-      the_title( '<div class="hero-title single-event-title">', '</div>' );
+      the_title( '<h1 class="hero-title single-event-title">', '</h1>' );
 
     // If we're on the main events page
     elseif ( tribe_is_event_query() && is_archive() ) :
-      echo '<div class="hero-title events-title">' . __('Events', 'nus') . '</div>';
+      echo '<h1 class="hero-title events-title">' . __('Events', 'nus') . '</h1>';
 
     // Other single posts
-    elseif ( is_single('post') && ! tribe_is_event() ) :
-      echo '<div class="posts-page-title hero-title">' . get_the_title( get_option('page_for_posts', true) ) . '</div>';
+    elseif ( is_single() && ! tribe_is_event() ) :
+      echo '<div class="hero-title page-title">' . __('Harmony Headlines', 'nus') . '</div>';
 
     elseif ( is_archive() && ! is_home() ) :
       $current_term = single_term_title( "", false );

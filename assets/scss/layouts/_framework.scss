@@ -10,7 +10,7 @@
 
 body {
   &:not(.home) {
-    padding-top: 105px;
+    padding-top: 125px;
     @include mq(medium) {
       padding-top: 140px;
     }
@@ -37,7 +37,6 @@ body {
   margin: 0 auto;
   padding: 15px 25px 45px;
   @include mq(medium) {
-    max-width: 1200px;
     display: grid;
     justify-content: center;
   }
@@ -95,7 +94,7 @@ body {
 .single,
 .archive {
   .site-main {
-    > .entry-content {
+    .entry-content {
       display: grid;
       justify-content: center;
       > p,
@@ -107,7 +106,7 @@ body {
       > ol {
         padding-left: 25px;
         padding-right: 25px;
-        max-width: 1200px;
+        max-width: 1200px !important;
       }
     }
   }

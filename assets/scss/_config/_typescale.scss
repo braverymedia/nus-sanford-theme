@@ -1,20 +1,17 @@
-
+:root {
+  font-size: 112.5%;
+}
 // Modular Scale Config
 $modularscale: (
-    base: .889rem,
-    ratio: $major-second,
-    767px: (
-      base: 1.125rem,
-      ratio: $major-second,
-    ),
+  base: 1em,
+  ratio: $major-second,
 );
 
 // Overwrite Normalize.css
 body {
     font-family: $font__default-stack;
     font-weight: $weight__book;
-    font-size: ms(0);
-    line-height: 1.667;
+    line-height: 1.4;
     font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $ship-gray;
@@ -29,81 +26,49 @@ body {
   font-size: ms(0); // 18px
 }
 h4 {
-  font-size: ms(0); // 18px
-}
-h3 {
   font-size: ms(1); // 20px
 }
+h3 {
+  font-size: ms(2); // 24px
+  font-weight: $weight__semibold;
+  margin-bottom: 1.171em;
+  @include mq(medium) {
+    font-size: ms(3); // 24px
+  }
+  > a {
+    color: inherit;
+  }
+}
 h2 {
-  font-size: ms(5); // 24px
+  font-size: ms(5); // 46px
   font-weight: $weight__book;
+  margin-bottom: .925em;
   @include mq(large) {
     font-size: ms(8);
   }
 }
 h1 {
-  font-size: ms(5); // 46px
-  font-weight: $weight__book;
-}
-%super {
   font-size: ms(8);
+  font-weight: $weight__book;
   @include mq(medium){
     font-size: ms(12);
   }
 }
 p {
   font-size: ms(0);
-  margin-bottom: .75em;
-  @include mq(medium) {
-    font-size: ms(1);
-  }
-  @include mq(large) {
-    font-size: ms(2);
-  }
+  margin-bottom: 1.667em;
 
   &.has-medium-font-size {
     margin-bottom: 1.5em;
-    @include mq(medium) {
-      font-size: ms(3);
-    }
+    font-size: ms(2);
   }
 }
 
 .hero-title, .page-title, .archive-title, .posts-page-title {
-  @extend %super;
+  @extend h1;
+  max-width: 1200px;
 }
 .entry-content {
-  p {
-    font-size: ms(1);
-    @include mq(medium) {
-      font-size: ms(3);
-    }
-  }
-  h1 {
-    font-size: ms(6);
-    margin-bottom: .75em;
-    @include mq(large) {
-      font-size: ms(9);
-    }
-  }
-  h2 {
-    color: $medium-carmine;
-    font-size: ms(2);
-    font-weight: $weight__semibold;
-    margin-bottom: .75em;
-    @include mq(medium){
-      font-size: ms(4);
-    }
-  }
-  h3 {
-    font-size: ms(2);
-    font-weight: $weight__semibold;
-    margin-bottom: .75em;
-    @include mq(medium){
-      font-size: ms(3);
-      margin-top: 1.5em;
-    }
-  }
   li {
     margin-left: 2.5em !important;
     list-style-position: outside;
