@@ -4409,13 +4409,6 @@
 		"oAP": "/template-parts/content/content-excerpt.php",
 		"oF": 0
 		},
-	"/template-parts/content/content-list-event.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/template-parts/content/content-list-event.php",
-		"oF": 0
-		},
 	"/template-parts/content/content-none.php": {
 		"cB": 0,
 		"ft": 8192,

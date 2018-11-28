@@ -63,5 +63,10 @@
     grid-column-gap: 70px;
     grid-row-gap: 50px;
   }
-
+  a[rel='prev'] {
+    > span {
+      transform-origin: center center;
+      transform: rotate(-180deg);
+    }
+  }
 }
