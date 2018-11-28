@@ -43,7 +43,7 @@
   @include mq(large) {
     .home-tagline {
       max-width: 950px;
-      font-size: 6.875rem;
+      font-size: ms(15);
       padding-bottom: 5vw;
     }
   }

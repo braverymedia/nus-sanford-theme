@@ -62,7 +62,6 @@
 	@include mq(medium) {
 		padding: 15px 0;
 		.wp-block--inner {
-			font-size: ms(2);
 			padding-left: 0 !important;
 			padding-right: 0 !important;
 		}
@@ -82,7 +81,7 @@
 		margin-top: 0;
 	}
 	@include mq(large) {
-		height: 380px;
+		height: 350px;
 	}
 	&:first-child {
 		margin-top: 0;
@@ -117,13 +116,13 @@
 		@include mq(large) {
 			p {
 				min-height: 125px;
-				font-size: ms(1);
 			}
 		}
 	}
 	h3 {
 		font-size: 1rem;
 		margin-bottom: 35px;
+		margin-top: 0;
 	}
   &--action {
     font-weight: bold;
@@ -133,7 +132,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    transform: translateY(25px);
+    transform: translateY(5px);
     .svg-icon {
       margin-left: 5px;
       transform: translateY(2px);
