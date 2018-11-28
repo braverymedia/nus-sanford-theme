@@ -191,7 +191,12 @@
 			outline: none;
 			color: white;
 			outline: none;
-
+			@include mq(medium) {
+				width: 50%;
+			}
+			@include mq(large) {
+				width: 200px;
+			}
 			&:hover {
 				cursor: pointer;
 			}
@@ -216,12 +221,6 @@
 
 		&.is-style-outline .wp-block-button__link:hover {
 			// color: $color__background-button-hover;
-		}
-		@include mq(medium) {
-			width: 50%;
-		}
-		@include mq(large) {
-			width: 200px;
 		}
 	}
 
@@ -867,10 +866,7 @@
 }
 .nus-section-location {
 	.wp-block-media-text__content {
-		font-size: ms(4);
-		.wp-block-button .wp-block-button__link {
-			font-size: ms(2);
-		}
+		font-size: ms(3);
 	}
 }
 @import
