@@ -1,6 +1,7 @@
 .breadcrumbs {
   background-color: $white;
   border-bottom: 1px solid $seashell;
+  z-index: 100;
   @include mq(medium) {
     position: sticky;
     top: 145px;
