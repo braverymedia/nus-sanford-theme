@@ -37,8 +37,7 @@ body {
   margin: 0 auto;
   padding: 15px 25px 45px;
   @include mq(medium) {
-    display: grid;
-    justify-content: center;
+    padding: 15px 0 45px;
   }
   body.home & {
     padding: 0;
@@ -46,6 +45,7 @@ body {
       max-width: none;
     }
     .entry-content {
+      width: 100%;
       > p:first-child {
         padding: 35px 25px 45px;
         max-width: 900px;
@@ -54,7 +54,6 @@ body {
       }
     }
   }
-  body:not(.home).has-sidebar &,
   body.blog &,
   body.single &,
   body.archive & {
@@ -95,18 +94,19 @@ body {
 .archive {
   .site-main {
     .entry-content {
-      display: grid;
-      justify-content: center;
+
       > p,
       > h1,
       > h2,
       > h3,
       > h4,
       > ul,
-      > ol {
-        padding-left: 25px;
-        padding-right: 25px;
+      > ol,
+      > blockquote {
+        width: 100%;
         max-width: 1200px !important;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

@@ -64,10 +64,7 @@
     }
   }
   @include mq(medium) {
-    font-size: ms(0);
-  }
-  @include mq(large) {
-    font-size: ms(1);
+    font-size: ms(-1);
   }
 }
 body:not(.home) {

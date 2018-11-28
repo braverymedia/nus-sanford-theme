@@ -184,24 +184,19 @@
 
 		.wp-block-button__link {
 			border: none;
-			// background: $color__background-button;
-			font-size: ms(-1);
 			font-family: $font__default-heading-stack;
 			box-sizing: border-box;
 			font-weight: bold;
 			text-decoration: none;
-			padding: ($size__spacing-unit * .76) $size__spacing-unit;
 			outline: none;
 			color: white;
 			outline: none;
 
 			&:hover {
-				// background: $color__background-button-hover;
 				cursor: pointer;
 			}
 
 			&:focus {
-				// background: $color__background-button-hover;
 				outline: thin dotted;
 				outline-offset: -4px;
 			}
@@ -221,6 +216,12 @@
 
 		&.is-style-outline .wp-block-button__link:hover {
 			// color: $color__background-button-hover;
+		}
+		@include mq(medium) {
+			width: 50%;
+		}
+		@include mq(large) {
+			width: 200px;
 		}
 	}
 
@@ -495,11 +496,11 @@
 			@include mq(medium) {
 				padding: 0;
 				max-width: 900px;
-				margin: 35px auto;
+				margin: 0 auto;
 			}
 			@include mq(large) {
 				max-width: 1000px;
-				margin: 55px auto;
+				margin: 0 auto;
 			}
 		}
 	}
@@ -652,6 +653,7 @@
 	}
 	.wp-block-embed__wrapper {
 		max-width: 800px;
+		margin: 0 auto;
 		iframe {
 			position: absolute;
 			left: 0;

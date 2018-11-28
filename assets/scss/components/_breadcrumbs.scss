@@ -42,12 +42,14 @@
   }
   margin-bottom: 35px;
   @include mq(medium) {
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
 }
 .breadcrumb-container {
-  @extend %inner-bounds;
-  padding: 16px 25px !important;
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px 0 !important;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }

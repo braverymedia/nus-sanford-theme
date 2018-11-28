@@ -47,7 +47,7 @@
 					font-weight: $weight__semibold;
 				}
 				@include mq(large) {
-					font-size: ms(2);
+					font-size: ms(0);
 				}
 			}
 		}
@@ -95,7 +95,7 @@
 	}
 	blockquote {
 		grid-area: testimonial-content;
-		font-size: ms(3);
+		font-size: ms(2);
 		text-align: center;
 		margin-top: 10px;
 		align-self: center;
@@ -110,7 +110,6 @@
 				display: block;
 			}
       width: 600px;
-			font-size: ms(3);
     }
 		p {
 			font-weight: $weight__semibold;
@@ -120,12 +119,12 @@
 			cite {
 				display: block;
 				color: $dark-pastel-blue;
-				font-size: ms(0);
+				font-size: ms(-1);
 				text-transform: uppercase;
 				font-weight: $weight__bold;
 			}
 			span {
-				font-size: ms(0);
+				font-size: ms(-1);
 				color: $white;
 				font-style: italic;
 			}
@@ -155,7 +154,7 @@
 	.ab-testimonial-text p {
 		font-weight: $weight__semibold;
 		font-style: italic;
-		font-size: ms(1);
+		font-size: ms(2) !important;
 	}
 	.ab-testimonial-info {
 		position: static;
@@ -163,10 +162,10 @@
 	.ab-testimonial-name {
 		color: $pistachio !important;
 		text-transform: uppercase;
-		font-size: 1.1em;
+		font-size: ms(0);
 	}
 	.ab-testimonial-title {
-		font-size: ms(0);
+		font-size: ms(-1);
 		font-style: italic;
 	}
 	&.ab-has-avatar {

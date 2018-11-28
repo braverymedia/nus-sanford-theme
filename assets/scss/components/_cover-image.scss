@@ -20,7 +20,7 @@
       max-width: none;
     }
   }
-  .home-tagline {
+  .home-tagline, .hero-title {
     font-family: $font--hero;
     color: $white;
     position: relative;
@@ -30,29 +30,21 @@
     line-height: .87;
     padding: 20px 25px;
     max-width: 480px;
-
+    z-index: 10;
   }
   @include mq(medium) {
     max-height: 705px;
-    .home-tagline {
+    .home-tagline, .hero-title {
       max-width: 70vw;
       font-size: 4.875rem;
       padding-bottom: 5vw;
     }
   }
   @include mq(large) {
-    .home-tagline {
+    .home-tagline, .hero-title {
       max-width: 950px;
       font-size: ms(15);
       padding-bottom: 5vw;
-    }
-  }
-  .hero-title {
-    line-height: 1.2;
-    text-align: center;
-    text-transform: uppercase;
-    @include mq(medium) {
-      margin-bottom: 5vw;
     }
   }
 }
