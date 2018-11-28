@@ -46,20 +46,22 @@
   padding: 8px 35px 8px 14px;
   text-shadow: 0 1px 0 #fff;
 }
-.tribe-events-event-image {
-    float: none !important;
-    margin: 0 !important;
-    width: 100% !important;
-    display: flex;
-    height: 300px;
-    @include mq(medium) {
-      height: 525px;
-    }
-    > img {
-      object-fit: cover;
-    }
-}
+
 .tribe-events-loop {
+  .tribe-events-event-image {
+      float: none !important;
+      margin: 0 !important;
+      width: 100% !important;
+      display: flex;
+      height: 300px;
+      margin-bottom: 25px !important;
+      @include mq(medium) {
+        height: 350px;
+      }
+      > img {
+        object-fit: cover;
+      }
+  }
   @include mq(medium) {
     display: grid;
     grid-auto-flow: row;
@@ -121,6 +123,7 @@
     max-width: 1200px;
     margin: 25px auto 0;
     padding: 0 25px;
+    width: 100%;
     @include mq(medium) {
       padding: 0;
       margin: 55px auto 0;
@@ -129,8 +132,7 @@
       img {
         object-fit: cover;
         width: 100%;
-        height: 100%;
-        max-width: none;
+        max-width: 100%;
       }
     }
   }
@@ -165,9 +167,7 @@
     @extend h3;
   }
   .tribe-events-single .type-tribe_events {
-    margin-top: 35px;
     @include mq(medium) {
-      margin-top: 55px;
       display: grid;
       justify-content: space-between;
       align-items: start;
@@ -180,7 +180,7 @@
     }
   }
 }
-.tribe-events-event-meta {
+.tribe-events-event-details {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 0 0 8px -2px rgba(#000, .4);

@@ -29,7 +29,7 @@ body {
     padding-top: 0;
     .widget {
       position: sticky;
-      top: 185px;
+      top: 230px;
     }
   }
 }
@@ -58,11 +58,13 @@ body {
     }
   }
   body.blog &,
-  body.single &,
+  body.category &,
+  body.single:not(.single-tribe_events) &,
   body.archive:not(.events-archive) & {
     margin: 0 auto;
     padding: 15px 25px 45px;
     @include mq(medium) {
+      display: grid;
       grid-template-columns: 70% 25%;
       grid-column-gap: 5%;
     }
@@ -97,7 +99,8 @@ body {
 }
 .page,
 .single,
-.archive {
+.archive,
+.page-template-layout-webinars {
   .site-main {
     .entry-content {
       > p,
@@ -115,6 +118,17 @@ body {
         margin-right: auto;
       }
     }
+  }
+}
+body.blog .site-main,
+body.category .site-main,
+body.archive:not(.events-archive) .site-main,
+body.page-template-layout-webinars .site-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 25px 45px;
+  @include mq(large) {
+    padding: 15px 0 45px;
   }
 }
 .entry-content {

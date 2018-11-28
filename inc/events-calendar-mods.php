@@ -19,11 +19,10 @@
       <div class="wp-block--inner">
         <div class="nus-tribe-event--copy">
           <h2><a href="<?php the_permalink($event->ID); ?>" title="Watch this webinar."><?php echo $event->post_title; ?></a></h2>
-          <?php echo $event->post_content; ?>
         </div>
         <div class="nus-tribe-event--action">
           <div class="wp-block-button aligncenter">
-            <a class="wp-block-button__link has-background has-primary-background-color" href="<?php the_permalink($event->ID); ?>" title="Watch <?php echo $event->post_title; ?>">Watch Webinar</a>
+            <a class="wp-block-button__link has-background has-denim-background-color" href="<?php the_permalink($event->ID); ?>" title="Watch <?php echo $event->post_title; ?>">Watch Webinar</a>
           </div>
         </div>
       </div>

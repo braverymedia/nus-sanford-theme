@@ -3,7 +3,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 a.wp-block-button__link,
-.wp-block-button__link {
+.wp-block-button__link,
+#infinite-handle span {
 	border: 1px solid;
 	border-radius: 50px !important;
 	color: $white !important;
@@ -61,4 +62,9 @@ a.wp-block-button__link,
 		@include button-blank();
 	}
 
+}
+#infinite-handle span {
+	font-size: inherit;
+	width: auto;
+	flex: 0 300px;
 }
