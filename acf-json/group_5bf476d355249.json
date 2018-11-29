@@ -16,6 +16,7 @@
                 "id": ""
             },
             "choices": {
+                "app": "SEL App",
                 "book": "Book",
                 "diversity": "Diversity",
                 "email": "Email",
@@ -310,5 +311,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1543197080
+    "modified": 1543507763
 }
