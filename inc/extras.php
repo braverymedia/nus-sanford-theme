@@ -48,17 +48,17 @@ add_action( 'login_enqueue_scripts', 'nus_login_stylesheet' );
 
 // Edit login page logo url
 function nus_login_logo_url() {
-	return 'http://braverymedia.co';
+	return 'https://bravery.co';
 }
 add_filter('login_headerurl', 'nus_login_logo_url');
 
 function nus_login_logo_tooltip() {
-	return 'Site by Bravery Media';
+	return 'Built with Bravery.';
 }
 
 // customize admin footer text
 function nus_admin_footer() {
-	echo '<a href="http://braverymedia.co/?ref=ctheme" title="Built with Bravery" target="_blank">Built with Bravery.</a>';
+	echo '<a href="https://bravery.co/?ref=ctheme" title="Built with Bravery" target="_blank">Built with Bravery.</a>';
 }
 add_filter('admin_footer_text', 'nus_admin_footer');
 
