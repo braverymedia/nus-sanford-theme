@@ -294,7 +294,7 @@ if ( ! function_exists( 'nus_post_thumbnail' ) ) :
 			?>
 
 			<figure class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('full'); ?>
 			</figure><!-- .post-thumbnail -->
 
 			<?php
@@ -304,7 +304,7 @@ if ( ! function_exists( 'nus_post_thumbnail' ) ) :
 		<figure class="post-thumbnail">
 			<a class="post-thumbnail-inner" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
-				the_post_thumbnail( 'post-thumbnail' );
+				the_post_thumbnail( 'full' );
 				?>
 			</a>
 		</figure>
