@@ -270,3 +270,12 @@ function nus_hsl_hex( $h, $s, $l, $to_hex = true ) {
 		return "rgb($r, $g, $b)";
 	}
 }
+
+/**
+ * Custom WYSWIYG formats.
+ */
+function nus_mce_buttons( $buttons ) {
+  array_unshift( $buttons, 'styleselect' );
+  return $buttons;
+}
+add_filter( 'mce_buttons_2', 'nus_mce_buttons' );

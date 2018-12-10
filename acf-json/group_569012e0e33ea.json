@@ -1,0 +1,103 @@
+{
+    "key": "group_569012e0e33ea",
+    "title": "Teaching Material Details",
+    "fields": [
+        {
+            "key": "field_569012ea9dc14",
+            "label": "Grade Level",
+            "name": "grade_level",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "PreK\u20132nd Grade": "PreK\u20132nd Grade",
+                "3rd\u20136th Grade": "3rd\u20136th Grade"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_569013d19dc15",
+            "label": "Duration",
+            "name": "duration",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "5": "5 minutes",
+                "15": "15 minutes",
+                "30": "30 minutes",
+                "60": "60 minutes"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_569014179dc16",
+            "label": "PDF",
+            "name": "pdf",
+            "type": "relationship",
+            "instructions": "These asset(s) will automatically appear on the Teaching Material page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "asset"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "teaching-material"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1456440053
+}
