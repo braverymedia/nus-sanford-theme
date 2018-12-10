@@ -41,6 +41,10 @@ textarea {
 		display: grid !important;
 		grid-template-columns: 1fr 1fr;
 		grid-auto-flow: row;
+		li.gfield {
+			margin-top: 0;
+			margin-bottom: 16px;
+		}
 		li:last-child {
 			grid-column: 1 / 3;
 		}

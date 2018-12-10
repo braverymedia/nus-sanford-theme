@@ -100,8 +100,11 @@
 		}
 		.ab-container-inside {
 			padding: 35px 25px;
+			.wp-block-atomic-blocks-ab-testimonial {
+				margin: 0 auto !important;
+			}
 			@include mq(large) {
-				padding: 55px 25px 90px;
+				padding: 45px 25px 45px;
 			}
 		}
 	}
@@ -109,9 +112,7 @@
 		left: auto;
 		max-width: 100%;
 	}
-
 }
-
 /*
  * Unset nested content selector styles
  * - Prevents layout styles from cascading too deeply
@@ -141,7 +142,10 @@
 	p.has-background {
 		padding: 20px 30px;
 	}
-
+	// Block container
+	p + .ab-block-container {
+		margin-top: 42.7203px !important;
+	}
 	//! Audio
 	.wp-block-audio {
 
@@ -450,6 +454,9 @@
 	//! Image
 	.wp-block-image {
 		margin-top: 35px;
+		& + p {
+			margin-top: 42.7203px;
+		}
 		img {
 			display: block;
 		}
@@ -642,6 +649,10 @@
 				width: 100%;
 				max-width: 1200px;
 			}
+		}
+		&.is-type-video {
+			margin-top: 42.7203px;
+			margin-bottom: 42.7203px;
 		}
 	}
 	.wp-block-embed__wrapper {

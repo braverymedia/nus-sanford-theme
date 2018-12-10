@@ -96,6 +96,10 @@ body {
   li.gfield:before {
     display: none;
   }
+  @include mq(medium) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .page,
 .single,
