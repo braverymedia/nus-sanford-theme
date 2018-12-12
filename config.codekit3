@@ -23,78 +23,6 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/acf-json/group_5bf476d355249.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf476d355249-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9b660273da.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9b660273da-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9b93aa3736.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9b93aa3736-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9bae1203f6.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9bae1203f6-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9bf36eb780.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9bf36eb780-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9c7741d70c.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9c7741d70c-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9c91a45865.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9c91a45865-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9cff693962.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9cff693962-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5bf9e8266f9c6.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5bf9e8266f9c6-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2141,6 +2069,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "/assets/img/bravery-stacked.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 1790464483327,
+		"prP": 1
+		},
+	"/assets/img/harmony-at-nu.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/harmony-at-nu.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 1790464483327,
