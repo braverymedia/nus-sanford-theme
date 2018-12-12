@@ -23,6 +23,14 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/acf-json/group_5bf9b660273da.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5bf9b660273da-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2015,23 +2023,6 @@
 		"oAP": "/assets/css/sanford.css.map",
 		"oF": 0
 		},
-	"/assets/css/wp-base.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/assets/css/min/wp-base.min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/css/wp-base.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/assets/css/wp-base.css.map",
-		"oF": 0
-		},
 	"/assets/img/android-store_icon.png": {
 		"ft": 32768,
 		"iS": 8605,
@@ -3675,6 +3666,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/assets/scss/css/_sharing.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/components/_thememylogin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_thememylogin.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
