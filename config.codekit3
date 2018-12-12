@@ -4198,11 +4198,11 @@
 		"oAP": "/sidebar.php",
 		"oF": 0
 		},
-	"/single.php": {
+	"/single-post.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/single.php",
+		"oAP": "/single-post.php",
 		"oF": 0
 		},
 	"/style.css": {

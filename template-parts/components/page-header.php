@@ -18,8 +18,11 @@
       echo '<h1 class="hero-title events-title">' . __('Events', 'nus') . '</h1>';
 
     // Other single posts
-    elseif ( !tribe_is_event() && is_single() ) :
+    elseif ( !tribe_is_event() && is_singular( 'post' ) ) :
       echo '<div class="hero-title page-title">' . __('Harmony Headlines', 'nus') . '</div>';
+
+    elseif ( !tribe_is_event() && is_singular( 'sfwd-courses' ) ) :
+      echo '<div class="hero-title page-title">' . get_the_title() . '</div>';
 
     elseif ( is_archive() && ! is_home() ) :
       $current_term = single_term_title( "", false );
