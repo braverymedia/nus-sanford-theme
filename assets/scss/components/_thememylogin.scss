@@ -1,8 +1,9 @@
-.tml-login {
+.tml {
   width: 100%;
   max-width: 520px;
   .tml-button {
     @extend button;
+    font-size: ms(0);
     background-color: $denim;
 		&:hover {
 			background-color: $bahama-blue;
@@ -11,9 +12,11 @@
   .tml-links {
     padding: 0;
     margin: 0 15px 0 0;
-    display: inline-block;
-    li:before {
-      display: none;
+    li {
+      display: inline-block;
+      &:before {
+        display: none;
+      }
     }
   }
 }
