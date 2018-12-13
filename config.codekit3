@@ -4191,6 +4191,13 @@
 		"oAP": "/search.php",
 		"oF": 0
 		},
+	"/sidebar-courses.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/sidebar-courses.php",
+		"oF": 0
+		},
 	"/sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -4203,6 +4210,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/single-post.php",
+		"oF": 0
+		},
+	"/single-sfwd-courses.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single-sfwd-courses.php",
+		"oF": 0
+		},
+	"/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single.php",
 		"oF": 0
 		},
 	"/style.css": {
@@ -4325,6 +4346,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/template-parts/components/utility-nav.php",
+		"oF": 0
+		},
+	"/template-parts/content/content-course.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/template-parts/content/content-course.php",
 		"oF": 0
 		},
 	"/template-parts/content/content-excerpt.php": {
