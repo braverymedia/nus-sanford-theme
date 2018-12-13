@@ -32,6 +32,12 @@ body {
       top: 230px;
     }
   }
+  .single-sfwd-lessons &,
+  .single-sfwd-courses & {
+    .widget {
+      position: static !important;
+    }
+  }
 }
 .site-main {
   margin: 0 auto;

@@ -9,14 +9,20 @@ a.wp-block-button__link,
 	border-radius: 50px !important;
 	color: $white !important;
 	font-family: $font__default-stack;
+	font-size: ms(0);
+	font-weight: $weight__bold;
 	line-height: 1;
 	padding: 1em 1em;
 	margin-top: 15px;
 	text-transform: uppercase;
-	font-weight: $weight__bold;
 	width: 100%;
 	text-decoration: none !important;
 	transition: all .3s ease-in-out;
+	// Default colors
+	background-color: $denim;
+	&:hover {
+		background-color: $bahama-blue;
+	}
 	@include mq(medium) {
 		width: 50%;
 	}

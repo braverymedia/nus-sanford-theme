@@ -21,7 +21,7 @@
     elseif ( !tribe_is_event() && is_singular( 'post' ) ) :
       echo '<div class="hero-title page-title">' . __('Harmony Headlines', 'nus') . '</div>';
 
-    elseif ( !tribe_is_event() && is_singular( 'sfwd-courses' ) ) :
+    elseif ( !tribe_is_event() && is_singular( 'sfwd-courses' ) || is_singular('sfwd-lessons') ) :
       echo '<div class="hero-title page-title">' . get_the_title() . '</div>';
 
     elseif ( is_archive() && ! is_home() ) :

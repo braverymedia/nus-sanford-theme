@@ -3670,19 +3670,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/components/_thememylogin.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/assets/scss/css/_thememylogin.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/assets/scss/components/_toolbar-header.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3692,19 +3679,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/assets/scss/css/_toolbar-header.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/components/_tribe-events.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/assets/scss/css/_tribe-events.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -3874,6 +3848,58 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/assets/css/sanford.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/vendor/_learndash.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_learndash.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/vendor/_thememylogin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_thememylogin.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/vendor/_tribe-events.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_tribe-events.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/vendor/_vendor.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/assets/scss/css/_vendor.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4217,6 +4243,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/single-sfwd-courses.php",
+		"oF": 0
+		},
+	"/single-sfwd-lessons.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/single-sfwd-lessons.php",
 		"oF": 0
 		},
 	"/single.php": {
