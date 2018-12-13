@@ -26,7 +26,7 @@ get_header(); ?>
 			</section>
 			<?php
 				 // Sidebar widgets aren't ever full-height, so load them here
-				 get_sidebar();
+				 get_sidebar('courses');
 			?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
