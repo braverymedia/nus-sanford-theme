@@ -169,13 +169,16 @@ function nus_add_dropdown_icons( $output, $item, $depth, $args ) {
 
 	} elseif ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
 
+		$output = preg_replace(
+			'/<span\s.*?>/',
+			'<span class="submenu-expand" tabindex="-1">',
+			$output,
+			1 // Limit.
+		);
 		// Add SVG icon to parent items.
 		$icon = nus_get_icon_svg( 'keyboard_arrow_down', 24 );
 
-		$output .= sprintf(
-			'<span class="submenu-expand" tabindex="-1">%s</span>',
-			$icon
-		);
+		$output .= '</span>>' . $icon . $output;
 	}
 
 	return $output;

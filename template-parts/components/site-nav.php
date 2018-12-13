@@ -5,6 +5,8 @@
       'theme_location' => 'site-menu',
       'container'      => false,
       'items_wrap'     => '<ul id="%1$s" class="%2$s" tabindex="0">%3$s</ul>', // accessibility
+      'link_before'         => '<span>',
+      'link_after'          => '</span>',
     )
   ); ?>
 </nav><!-- #site-navigation -->

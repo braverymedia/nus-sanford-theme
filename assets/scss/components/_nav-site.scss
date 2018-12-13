@@ -104,6 +104,9 @@
             transition: opacity .3s ease-in-out;
           }
         }
+        li span:after {
+          display: none !important;
+        }
         &.current-menu-item,
         &.current-page-ancestor {
           span:after {
